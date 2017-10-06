@@ -7,11 +7,23 @@
 //
 
 import UIKit
+struct StoryBoard {
+    var storyBoardName:String
+    var display:String
+}
+protocol MenuItemDelegate {
+    func didSelectMenu(menu:StoryBoard)
+}
 class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
-
+    var delegate:MenuItemDelegate?
     var contentView : UIView?
     var selectedMenu : LeftMenuTableViewCell?
     @IBOutlet weak var menuTableView: UITableView!
+    var menuItems:[StoryBoard] = [] {
+        didSet {
+            menuTableView.reloadData()
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
@@ -52,7 +64,7 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
     // MARK: UITableView
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return menuItems.count
     }
     
     // create a cell for each table view row
@@ -64,6 +76,7 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
             tableView.register(UINib(nibName: "LeftMenuCell", bundle: nil), forCellReuseIdentifier: identifier)
             cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? LeftMenuTableViewCell
         }
+        cell.menuName.text = menuItems[indexPath.row].display
         cell.backgroundColor = UIColor.clear
         cell.contentView.backgroundColor = UIColor.clear
         cell.backgroundView = UIView()
@@ -72,14 +85,13 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     // method to run when table view cell is tapped
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
         if ( self.selectedMenu != nil){
             self.selectedMenu?.selectionTriangle.isHidden = true
         }
         self.selectedMenu = self.menuTableView.cellForRow(at: indexPath) as? LeftMenuTableViewCell
         self.selectedMenu?.selectionTriangle.isHidden = false
-        
+        delegate?.didSelectMenu(menu: menuItems[indexPath.row])
     }
 
 }
