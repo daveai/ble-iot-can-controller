@@ -11,7 +11,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
-        StoryBoard(storyBoardName: "Pilots", display: "Pilots")
+        StoryBoard(storyBoardName: "Pilots", display: "Pilots"),
+        StoryBoard(storyBoardName: "Ticket", display: "Ticket")
     ];
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller
@@ -57,13 +58,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
         let childViewController: UINavigationController = {
             // Load Storyboard
             let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
-            
             // Instantiate View Controller
-            //var viewController = storyboard.instantiateViewController(withIdentifier: "pilot") as! PilotViewController
             let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
-            
-            // Add View Controller as Child View Controller
-            //self.add(asChildViewController: viewController)
             viewController.accessibilityValue = menu.storyBoardName
             return viewController
         }()
@@ -74,6 +70,7 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
                 if(child.accessibilityValue as String! == childViewController.accessibilityValue as String!){
                     //do not add as child view just present it up
                     print("hello")
+                    //break;
                 } else {
                     add(asChildViewController: childViewController)
                 }
