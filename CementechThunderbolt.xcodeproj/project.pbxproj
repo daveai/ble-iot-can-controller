@@ -14,6 +14,7 @@
 		3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */; };
 		3A64F3C91F87981800EB53A2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */; };
 		3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */; };
+		3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */; };
 		3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA91F71F860D0D00E5E0D3 /* AppDelegate.swift */; };
 		3ABA91FA1F860D0D00E5E0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA91F91F860D0D00E5E0D3 /* ViewController.swift */; };
 		3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABA91FB1F860D0D00E5E0D3 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
 		3ABA91F41F860D0D00E5E0D3 /* CementechThunderbolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CementechThunderbolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABA91F71F860D0D00E5E0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABA91F91F860D0D00E5E0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		3A09CC0D1F86312A0093F9E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A6F0FDD1F8BB4EC005AD863 /* Ticket */,
 				3A64F3C51F8796BD00EB53A2 /* Pilots */,
 				3AEB883D1F87601F00D56593 /* Fragments */,
 				3A64F3CD1F87B1E200EB53A2 /* Login */,
@@ -212,6 +215,14 @@
 				3ABA91F91F860D0D00E5E0D3 /* ViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		3A6F0FDD1F8BB4EC005AD863 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */,
+			);
+			path = Ticket;
 			sourceTree = "<group>";
 		};
 		3ABA91EB1F860D0D00E5E0D3 = {
@@ -611,6 +622,7 @@
 			files = (
 				3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */,
 				3ABA91FA1F860D0D00E5E0D3 /* ViewController.swift in Sources */,
+				3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */,
 				3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */,
 				3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */,
 				3ABA92001F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld in Sources */,
