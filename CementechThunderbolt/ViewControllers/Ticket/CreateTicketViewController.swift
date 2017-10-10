@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import MyExt
 class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
     var picker = UIPickerView()
-    @IBOutlet weak var state: CustomUITextField!
-    @IBOutlet weak var txtMixDesign: CustomUITextField!
+    @IBOutlet var state: CustomUITextField!
+    @IBOutlet var txtMixDesign: CustomUITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
