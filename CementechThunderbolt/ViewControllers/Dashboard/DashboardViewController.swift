@@ -11,7 +11,6 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
-        StoryBoard(storyBoardName: "Pilots", display: "Pilots"),
         StoryBoard(storyBoardName: "Ticket", display: "Ticket")
     ];
     private func add(asChildViewController viewController: UIViewController) {
@@ -45,6 +44,16 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
         // Do any additional setup after loading the view.
         self.leftMenuView.menuItems = storyBoards
         leftMenuView.delegate = self
+        
+        let childViewController: UINavigationController = {
+            // Load Storyboard
+            let storyboard = UIStoryboard(name: storyBoards[0].storyBoardName, bundle: Bundle.main)
+            // Instantiate View Controller
+            let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+            viewController.accessibilityValue = storyBoards[0].storyBoardName
+            return viewController
+        }()
+        add(asChildViewController: childViewController)
     }
 
     override func didReceiveMemoryWarning() {
