@@ -62,7 +62,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RlK-aL-2HW" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RlK-aL-2HW" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="33" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="0n8-Hm-7R3"/>
@@ -96,7 +96,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-LF-ujt" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-LF-ujt" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="94" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="3I0-SW-RUh"/>
@@ -130,7 +130,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBH-Ve-Q9A" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBH-Ve-Q9A" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="155" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="orl-kx-6sE"/>
@@ -164,7 +164,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUP-8Q-1D1" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUP-8Q-1D1" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="216" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="VCO-Th-kIT"/>
@@ -198,7 +198,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mcj-hD-Ouo" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mcj-hD-Ouo" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="558" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="VgG-U6-1Rm"/>
@@ -232,7 +232,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQI-8U-l9x" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQI-8U-l9x" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="277" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="qzO-oD-3rl"/>
@@ -278,7 +278,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8E-hR-THl" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8E-hR-THl" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="338" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="NXf-M1-sTq"/>
@@ -321,7 +321,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ5-9X-aoj" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ5-9X-aoj" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="399" width="300" height="108"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Qks-64-YYU"/>
@@ -377,7 +377,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-Ef-P2y" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-Ef-P2y" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="619" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="0T0-ei-aih"/>
@@ -421,7 +421,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-5F-NJL" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-5F-NJL" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="680" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="IaI-zS-SSs"/>
@@ -455,7 +455,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1N-ab-Xhp" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1N-ab-Xhp" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="802" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="BMa-zQ-n1v"/>
@@ -499,7 +499,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-cD-DyI" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-cD-DyI" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="741" width="250" height="36"/>
                                                 <color key="backgroundColor" red="0.79558613580000004" green="0.79558613580000004" blue="0.79558613580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -655,10 +655,10 @@
                         <barButtonItem key="rightBarButtonItem" title="Create" id="P2x-d2-Hzi"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="containerView" destination="U3t-h2-5hH" id="Q62-kv-ozW"/>
-                        <outlet property="scrollView" destination="BkV-Uz-UaS" id="IFe-Xy-d8S"/>
-                        <outlet property="state" destination="hQI-8U-l9x" id="oT9-hM-T6m"/>
-                        <outlet property="txtMixDesign" destination="s8E-hR-THl" id="X3g-6C-fLt"/>
+                        <outlet property="containerView" destination="U3t-h2-5hH" id="Jj3-tJ-k8E"/>
+                        <outlet property="scrollView" destination="BkV-Uz-UaS" id="khG-ud-Bzi"/>
+                        <outlet property="state" destination="hQI-8U-l9x" id="yEL-Ot-uBk"/>
+                        <outlet property="txtMixDesign" destination="s8E-hR-THl" id="VL1-uy-ssL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCR-Tn-j8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -691,10 +691,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-T3-umv" customClass="CustomUIView" customModule="CementechThunderbolt" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-T3-umv" customClass="CustomUIView" customModule="LayerUIExtention">
                                 <rect key="frame" x="25" y="79" width="203" height="36"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-JB-Lma" customClass="CustomUIButton" customModule="CementechThunderbolt" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-JB-Lma" customClass="CutomUIButton" customModule="LayerUIExtention">
                                         <rect key="frame" x="0.0" y="0.0" width="101.5" height="36"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
@@ -710,7 +710,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFa-cJ-TkG" customClass="CustomUIButton" customModule="CementechThunderbolt" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFa-cJ-TkG" customClass="CutomUIButton" customModule="LayerUIExtention">
                                         <rect key="frame" x="101.5" y="0.0" width="101.5" height="36"/>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
@@ -754,7 +754,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-BF-lzZ" customClass="CustomUIButton" customModule="CementechThunderbolt" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-BF-lzZ" customClass="CutomUIButton" customModule="LayerUIExtention">
                                 <rect key="frame" x="248" y="79" width="105" height="36"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -777,7 +777,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QB-Np-eHH" customClass="CustomUIView" customModule="CementechThunderbolt" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QB-Np-eHH" customClass="CustomUIView" customModule="LayerUIExtention">
                                 <rect key="frame" x="704" y="79" width="300" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="6Du-2H-8Vz">
@@ -950,7 +950,7 @@
         <!--Edit Ticket-->
         <scene sceneID="BKL-Jo-ECa">
             <objects>
-                <viewController id="arc-kp-lea" customClass="CreateTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="arc-kp-lea" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8nF-Fh-SoL">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -991,7 +991,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUW-jh-ghk" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUW-jh-ghk" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="33" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="FIH-Wn-O1L"/>
@@ -1025,7 +1025,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPw-z8-zrQ" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPw-z8-zrQ" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="94" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Gco-sa-807"/>
@@ -1059,7 +1059,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiO-pD-jeO" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiO-pD-jeO" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="155" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="SvE-Cs-1M4"/>
@@ -1093,7 +1093,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqi-hs-zMJ" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqi-hs-zMJ" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="216" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Xr1-aG-GSI"/>
@@ -1127,7 +1127,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rob-NK-64X" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rob-NK-64X" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="558" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="7dR-p0-yOx"/>
@@ -1161,7 +1161,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OrA-Zz-dDK" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OrA-Zz-dDK" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="277" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Lh5-0W-Is2"/>
@@ -1185,7 +1185,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-Rg-ATu">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-Rg-ATu" customClass="CustomUIButton" customModule="LayerUIExtention">
                                                 <rect key="frame" x="450" y="278" width="30" height="34"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1207,7 +1207,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-3q-zKE" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-3q-zKE" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="338" width="300" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="0te-ge-4Kt"/>
@@ -1231,7 +1231,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-3W-76a">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-3W-76a" customClass="CustomUIButton" customModule="LayerUIExtention">
                                                 <rect key="frame" x="450" y="339" width="30" height="34"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1250,7 +1250,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-dq-0db" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-dq-0db" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="181" y="399" width="300" height="108"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="8Mv-kc-Ixa"/>
@@ -1313,7 +1313,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-aZ-3YT" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-aZ-3YT" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="619" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="MNL-ss-joP"/>
@@ -1357,7 +1357,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GD-Wx-gFh" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GD-Wx-gFh" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="680" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="GCB-f2-E1S"/>
@@ -1391,7 +1391,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkl-37-3bd" customClass="CustomUITextField">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkl-37-3bd" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="802" width="250" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="6OC-wE-HMP"/>
@@ -1435,7 +1435,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47n-M9-AS2" customClass="CustomUITextField" customModule="CementechThunderbolt" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47n-M9-AS2" customClass="CustomUITextField" customModule="LayerUIExtention">
                                                 <rect key="frame" x="231" y="741" width="250" height="36"/>
                                                 <color key="backgroundColor" red="0.79558613580000004" green="0.79558613580000004" blue="0.79558613580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1477,7 +1477,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a note — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-Vu-tTB">
-                                                <rect key="frame" x="141" y="884" width="201" height="20"/>
+                                                <rect key="frame" x="141" y="884" width="200.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1492,7 +1492,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-po-3Ix">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-po-3Ix" customClass="CustomUIButton" customModule="LayerUIExtention">
                                                 <rect key="frame" x="930" y="892" width="58" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="HxA-4M-95G"/>
@@ -1568,7 +1568,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="yLK-Ag-FqJ"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIj-Q8-keZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIj-Q8-keZ" customClass="CustomUIButton" customModule="LayerUIExtention">
                                                 <rect key="frame" x="36" y="1266" width="148" height="108"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="108" id="MzI-1x-dIP"/>
@@ -1770,16 +1770,10 @@
                     <navigationItem key="navigationItem" title="Edit Ticket" id="CV3-n8-Yhx">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="NoE-Fw-Ztb"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="containerView" destination="YLt-7v-XFe" id="jlK-3K-ABY"/>
-                        <outlet property="scrollView" destination="gtr-wF-syc" id="INa-O2-gl8"/>
-                        <outlet property="state" destination="OrA-Zz-dDK" id="ZQ3-Q3-H2I"/>
-                        <outlet property="txtMixDesign" destination="KdB-3q-zKE" id="RBf-Gh-n6i"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNf-c8-LNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395.703125" y="757.03125"/>
+            <point key="canvasLocation" x="1386" y="759"/>
         </scene>
     </scenes>
     <resources>

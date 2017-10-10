@@ -1,7 +1,15 @@
+//
+//  CustomUIView.swift
+//  LayerUIExtention
+//
+//  Created by Debashis Banerjee on 10/10/17.
+//  Copyright © 2017 Debashis Banerjee. All rights reserved.
+//
+
 import UIKit
 
-@IBDesignable class CustomUIView:UIView {
-    
+@IBDesignable public class CustomUIView: UIView {
+
     /* BORDER */
     @IBInspectable var borderColor:UIColor? {
         set {
@@ -75,6 +83,4 @@ import UIKit
             return layer.shadowRadius
         }
     }
-    
-    
 }

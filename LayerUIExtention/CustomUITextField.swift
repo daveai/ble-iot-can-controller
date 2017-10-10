@@ -1,15 +1,15 @@
 //
 //  CustomUITextField.swift
-//  CementechThunderbolt
+//  LayerUIExtention
 //
-//  Created by Debashis Banerjee on 05/10/17.
+//  Created by Debashis Banerjee on 10/10/17.
 //  Copyright © 2017 Debashis Banerjee. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable class CustomUITextField: UITextField {
-    
+@IBDesignable public class CustomUITextField: UITextField {
+
     @IBInspectable var cornerRadius: CGFloat = 0.0 {
         
         didSet {
@@ -67,11 +67,11 @@ import UIKit
     @IBInspectable var paddingLeft: CGFloat = 0
     @IBInspectable var paddingRight: CGFloat = 0
     
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override public func textRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(x: bounds.origin.x + paddingLeft, y: bounds.origin.y, width: bounds.size.width - paddingLeft - paddingRight, height: bounds.size.height)
     }
     
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override public func editingRect(forBounds bounds: CGRect) -> CGRect {
         return textRect(forBounds: bounds)
     }
     
@@ -94,8 +94,5 @@ import UIKit
             leftView = nil
         }
     }
-    
-    
+
 }
-
-
