@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class CutomUIButton: UIButton {
+@IBDesignable public class CustomUIButton: UIButton {
 
     /* BORDER */
     @IBInspectable var borderColor:UIColor? {
