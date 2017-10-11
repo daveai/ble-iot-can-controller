@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
         <array key="PTSans.ttc">
             <string>PTSans-Bold</string>
             <string>PTSans-Regular</string>
@@ -836,19 +839,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-oh-BD3">
-                                                    <rect key="frame" x="289" y="8" width="249" height="20"/>
+                                                    <rect key="frame" x="289" y="8" width="248.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-Vk-d7l">
-                                                    <rect key="frame" x="546" y="8" width="249" height="20"/>
+                                                    <rect key="frame" x="545.5" y="8" width="248.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-HN-SYd">
-                                                    <rect key="frame" x="803" y="8" width="156" height="20"/>
+                                                    <rect key="frame" x="802" y="8" width="157" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -860,19 +863,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1700" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLv-Cm-KfW">
-                                                    <rect key="frame" x="289" y="38" width="249" height="20"/>
+                                                    <rect key="frame" x="289" y="38" width="248.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 yd³" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1r-fw-h5a">
-                                                    <rect key="frame" x="546" y="38" width="249" height="20"/>
+                                                    <rect key="frame" x="545.5" y="38" width="248.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.17000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Nov 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUK-IV-ie0">
-                                                    <rect key="frame" x="803" y="38" width="156" height="20"/>
+                                                    <rect key="frame" x="802" y="38" width="157" height="20"/>
                                                     <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.17000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -956,7 +959,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-wF-syc">
-                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                                <rect key="frame" x="0.0" y="144" width="1024" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-7v-XFe">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1692"/>
@@ -987,7 +990,7 @@
                                                     <constraint firstAttribute="width" constant="137" id="Rbq-PF-gAN"/>
                                                     <constraint firstAttribute="height" constant="36" id="tSE-yZ-2M4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1755,32 +1758,242 @@
                                     <constraint firstAttribute="trailing" secondItem="YLt-7v-XFe" secondAttribute="trailing" id="lXt-1g-sqH"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgF-sQ-qYd" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                <rect key="frame" x="36" y="89" width="85" height="36"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="5H8-CB-Ymp"/>
+                                    <constraint firstAttribute="width" constant="85" id="T3U-uh-NLi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="+ Note">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-Xl-IAc" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                <rect key="frame" x="930" y="89" width="58" height="36"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6B4-aU-Cf7"/>
+                                    <constraint firstAttribute="width" constant="58" id="f7T-rz-VhR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" image="mail_icon">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-Sl-Sl3" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                <rect key="frame" x="129" y="89" width="103" height="36"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="36i-gu-9SF"/>
+                                    <constraint firstAttribute="width" constant="103" id="bRv-T1-2EB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="+ Picture">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPk-FG-uFZ" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                <rect key="frame" x="240" y="89" width="124" height="36"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="i7I-SP-o8y"/>
+                                    <constraint firstAttribute="height" constant="36" id="pye-cZ-bvf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="+ Signature">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLo-7i-Kg1" customClass="CustomUIView" customModule="LayerUIExtention">
+                                <rect key="frame" x="372" y="89" width="260" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlT-xz-USx" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                        <rect key="frame" x="77" y="0.0" width="113" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Completed">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-zG-RI4" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="New">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dks-at-F2m" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                        <rect key="frame" x="187" y="0.0" width="73" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Here">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IcT-ba-Efq"/>
+                                    <constraint firstAttribute="width" constant="260" id="xT2-8C-pma"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-rp-GCF" customClass="CutomUIButton" customModule="LayerUIExtention">
+                                <rect key="frame" x="864" y="89" width="58" height="36"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0hl-Vu-Ryx"/>
+                                    <constraint firstAttribute="width" constant="58" id="fs3-Eh-GJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" image="print_icon">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="4Zv-KK-l4R"/>
+                            <constraint firstItem="PLo-7i-Kg1" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="5Bc-wo-fbg"/>
                             <constraint firstItem="YLt-7v-XFe" firstAttribute="width" secondItem="8nF-Fh-SoL" secondAttribute="width" id="7Pp-ba-bZ9"/>
+                            <constraint firstItem="C3n-Xl-IAc" firstAttribute="leading" secondItem="ZaB-rp-GCF" secondAttribute="trailing" constant="8" id="8EG-Bh-5Yp"/>
                             <constraint firstItem="gtr-wF-syc" firstAttribute="trailing" secondItem="Tjf-d1-5vR" secondAttribute="trailing" id="EWb-8S-BOc"/>
-                            <constraint firstItem="gtr-wF-syc" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" id="SLQ-kM-ZIj"/>
+                            <constraint firstItem="C3n-Xl-IAc" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="JeJ-Gd-Pey"/>
+                            <constraint firstItem="gtr-wF-syc" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="80" id="SLQ-kM-ZIj"/>
                             <constraint firstItem="gtr-wF-syc" firstAttribute="leading" secondItem="Tjf-d1-5vR" secondAttribute="leading" id="U5i-tn-scV"/>
+                            <constraint firstItem="RfS-Sl-Sl3" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="UTa-Ck-knS"/>
+                            <constraint firstItem="Tjf-d1-5vR" firstAttribute="trailing" secondItem="C3n-Xl-IAc" secondAttribute="trailing" constant="36" id="XUK-lJ-a4D"/>
+                            <constraint firstItem="SPk-FG-uFZ" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="XhH-ZP-M5z"/>
                             <constraint firstItem="YLt-7v-XFe" firstAttribute="height" secondItem="8nF-Fh-SoL" secondAttribute="height" constant="924" id="f7i-5t-SW9"/>
                             <constraint firstItem="gtr-wF-syc" firstAttribute="bottom" secondItem="Tjf-d1-5vR" secondAttribute="bottom" id="iYV-pU-FpB"/>
+                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="leading" secondItem="Tjf-d1-5vR" secondAttribute="leading" constant="36" id="jwt-VY-Eg9"/>
+                            <constraint firstItem="RfS-Sl-Sl3" firstAttribute="leading" secondItem="mgF-sQ-qYd" secondAttribute="trailing" constant="8" id="lnd-jW-6vZ"/>
+                            <constraint firstItem="SPk-FG-uFZ" firstAttribute="leading" secondItem="RfS-Sl-Sl3" secondAttribute="trailing" constant="8" id="oem-Yj-sP5"/>
+                            <constraint firstItem="ZaB-rp-GCF" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="p8W-yr-2Up"/>
+                            <constraint firstItem="PLo-7i-Kg1" firstAttribute="leading" secondItem="SPk-FG-uFZ" secondAttribute="trailing" constant="8" id="tzb-Oa-lGK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tjf-d1-5vR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Ticket" id="CV3-n8-Yhx">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="NoE-Fw-Ztb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="NoE-Fw-Ztb"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNf-c8-LNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="759"/>
+            <point key="canvasLocation" x="1385.7421875" y="758.59375"/>
         </scene>
     </scenes>
     <resources>
         <image name="dropdownarrow" width="8" height="4"/>
         <image name="eye" width="58" height="34"/>
         <image name="line" width="795" height="3"/>
+        <image name="mail_icon" width="30" height="19"/>
         <image name="notebutton" width="58" height="36"/>
+        <image name="print_icon" width="30" height="23"/>
         <image name="search" width="14" height="14"/>
         <image name="signature" width="148" height="108"/>
         <image name="temp" width="101" height="75"/>
