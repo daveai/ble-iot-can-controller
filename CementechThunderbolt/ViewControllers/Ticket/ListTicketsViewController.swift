@@ -9,7 +9,9 @@
 import UIKit
 
 class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    enum ControllersSegue: String {
+        case editTicket = "editTicket"
+    }
     @IBOutlet weak var ticketListTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +65,13 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
             label.text = "Past"            
         }
         return view
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == ControllersSegue.editTicket.rawValue){
+            
+            let _ = segue.destination as! EditTicketViewController
+            
+        }
     }
 
 }
