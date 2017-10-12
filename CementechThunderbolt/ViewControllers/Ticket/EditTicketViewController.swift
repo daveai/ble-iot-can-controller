@@ -7,17 +7,24 @@
 //
 
 import UIKit
-
+import LayerUIExtention
+import ReactiveKit
+import Bond
 class EditTicketViewController: UIViewController {
-
+    var editTicketViewModel:EditTicketViewModel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet var customerName: CustomUITextField!
+    @IBOutlet weak var locationName: CustomUITextField!
+    @IBOutlet weak var address: CustomUITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        editTicketViewModel = EditTicketViewModel(ticketModel: TicketModel(customerName: "Hello"))
+        editTicketViewModel.customerName.bind(to: self.customerName)        
     }
-
+    func setUp(editTicketViewModel:EditTicketViewModel){
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -25,15 +32,7 @@ class EditTicketViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         scrollView.contentSize = CGSize(width: containerView.frame.width, height: containerView.frame.width + 600.0)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func tempPrint(_ sender: Any) {
+        editTicketViewModel.customerName.value = "Hey"
     }
-    */
-
 }

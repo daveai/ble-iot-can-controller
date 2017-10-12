@@ -909,7 +909,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="arc-kp-lea" kind="show" id="gA4-xX-mtB"/>
+                                            <segue destination="arc-kp-lea" kind="show" identifier="editTicket" id="gA4-xX-mtB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1473,19 +1473,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfp-2E-q5s">
-                                                <rect key="frame" x="36" y="884" width="97" height="20"/>
+                                                <rect key="frame" x="36" y="884" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a note — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-Vu-tTB">
-                                                <rect key="frame" x="141" y="884" width="201" height="20"/>
+                                                <rect key="frame" x="149" y="884" width="218" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my note to this job." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvF-Cu-nLl">
-                                                <rect key="frame" x="36" y="912" width="191" height="20"/>
+                                                <rect key="frame" x="36" y="912" width="199.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1499,13 +1499,13 @@
                                                 <state key="normal" image="notebutton"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ht-Fb-Kj1">
-                                                <rect key="frame" x="36" y="975" width="97" height="20"/>
+                                                <rect key="frame" x="36" y="975" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attached three images — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auL-vt-Itt">
-                                                <rect key="frame" x="141" y="975" width="268" height="20"/>
+                                                <rect key="frame" x="149" y="975" width="286.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1575,13 +1575,13 @@
                                                 <state key="normal" title="Button" image="signature"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xx-xC-mgt">
-                                                <rect key="frame" x="36" y="1221" width="97" height="20"/>
+                                                <rect key="frame" x="36" y="1221" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a customer signature — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-kh-oEu">
-                                                <rect key="frame" x="141" y="1221" width="308" height="20"/>
+                                                <rect key="frame" x="149" y="1221" width="330.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1891,6 +1891,9 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tempPrint:" destination="arc-kp-lea" eventType="touchUpInside" id="f04-Af-Ki9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1920,13 +1923,16 @@
                         <barButtonItem key="rightBarButtonItem" title="Update" id="NoE-Fw-Ztb"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="address" destination="uiO-pD-jeO" id="E7d-kd-UYJ"/>
                         <outlet property="containerView" destination="YLt-7v-XFe" id="EG4-Wu-OjN"/>
+                        <outlet property="customerName" destination="qUW-jh-ghk" id="yGm-dv-eRb"/>
+                        <outlet property="locationName" destination="NPw-z8-zrQ" id="y9U-mT-Zpt"/>
                         <outlet property="scrollView" destination="gtr-wF-syc" id="o1i-K1-cZs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNf-c8-LNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1385.7421875" y="758.59375"/>
+            <point key="canvasLocation" x="927" y="805"/>
         </scene>
     </scenes>
     <resources>
