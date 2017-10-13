@@ -7,8 +7,16 @@
 //
 
 import UIKit
-
+protocol SignaturePopupDelegete {
+    func didClose(signatureData:UIImage)
+    func didClear()
+    func didDelete()
+}
 class SignaturePopup: UIView {
+    var delegate:SignaturePopupDelegete!
+    
+    @IBOutlet weak var signatureCanvas: YPDrawSignatureView!
+    
     var contentView:UIView?
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,5 +54,17 @@ class SignaturePopup: UIView {
         view.layer.addSublayer(border)
         return view
     }
-
+    
+    @IBAction func actionClear(_ sender: Any) {
+        signatureCanvas.clear()
+        delegate.didClear()
+    }
+    @IBAction func actionDelete(_ sender: Any) {
+        
+        delegate.didDelete()
+    }
+    @IBAction func actionClose(_ sender: Any) {
+        let signatureData = signatureCanvas.getSignature()
+        delegate.didClose(signatureData: signatureData!)
+    }
 }

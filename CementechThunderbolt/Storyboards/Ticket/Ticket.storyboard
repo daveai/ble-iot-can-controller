@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-h2-5hH">
-                                        <rect key="frame" x="0.0" y="-500" width="1024" height="1041"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1041"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZI-YR-cB8">
                                                 <rect key="frame" x="36" y="10" width="55" height="21"/>
@@ -664,7 +664,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="U3t-h2-5hH" secondAttribute="trailing" id="1Co-Gg-sHb"/>
                                     <constraint firstItem="U3t-h2-5hH" firstAttribute="leading" secondItem="BkV-Uz-UaS" secondAttribute="leading" id="CD3-fO-I5k"/>
-                                    <constraint firstItem="U3t-h2-5hH" firstAttribute="top" secondItem="BkV-Uz-UaS" secondAttribute="top" constant="-500" id="gkU-pP-FN8"/>
+                                    <constraint firstItem="U3t-h2-5hH" firstAttribute="top" secondItem="BkV-Uz-UaS" secondAttribute="top" id="gkU-pP-FN8"/>
                                     <constraint firstAttribute="bottom" secondItem="U3t-h2-5hH" secondAttribute="bottom" constant="-337" id="s43-UI-7ei"/>
                                 </constraints>
                             </scrollView>
@@ -1226,9 +1226,6 @@
                                                     <constraint firstAttribute="width" constant="30" id="ZxJ-dQ-kKy"/>
                                                 </constraints>
                                                 <state key="normal" image="dropdownarrow"/>
-                                                <connections>
-                                                    <action selector="actionStateDropDown:" destination="arc-kp-lea" eventType="touchUpInside" id="YPy-Xj-VfO"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjU-oP-xZa">
                                                 <rect key="frame" x="36" y="338" width="137" height="36"/>
@@ -1602,7 +1599,10 @@
                                                     <constraint firstAttribute="height" constant="108" id="MzI-1x-dIP"/>
                                                     <constraint firstAttribute="width" constant="148" id="Vt5-1K-Pri"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="signature"/>
+                                                <state key="normal" title="Button" backgroundImage="signature"/>
+                                                <connections>
+                                                    <action selector="actionOpenSignaturePopup:" destination="arc-kp-lea" eventType="touchUpInside" id="57v-3E-Ncr"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xx-xC-mgt">
                                                 <rect key="frame" x="36" y="1221" width="97" height="20"/>
@@ -1954,6 +1954,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="address" destination="uiO-pD-jeO" id="E7d-kd-UYJ"/>
+                        <outlet property="btnSignature" destination="VIj-Q8-keZ" id="1sV-xu-wr4"/>
                         <outlet property="containerView" destination="YLt-7v-XFe" id="EG4-Wu-OjN"/>
                         <outlet property="customerName" destination="qUW-jh-ghk" id="yGm-dv-eRb"/>
                         <outlet property="locationName" destination="NPw-z8-zrQ" id="y9U-mT-Zpt"/>

@@ -19,7 +19,8 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
     @IBOutlet weak var costPerYeardCube: CustomUITextField!
     @IBOutlet weak var additionalCost: CustomUITextField!
     @IBOutlet weak var totalCost: CustomUITextField!
-    
+    var states:[String] = ["CA","CT","AZ","HI"]
+    var selectedState:String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,20 +60,22 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
+        return states.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "Hello"
+        return states[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        selectedState = states[row]
     }
     @IBAction func actionStateDropDown(_ sender: Any) {
         state.becomeFirstResponder()
     }
     @objc func donePicker (sender:UIBarButtonItem){
-        print("Hello")
+        state.text = selectedState
+        state.resignFirstResponder()
+        
     }
     
     

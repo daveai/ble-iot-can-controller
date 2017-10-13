@@ -8,7 +8,7 @@
 
 import UIKit
 import LayerUIExtention
-class EditTicketViewController: UIViewController {
+class EditTicketViewController: UIViewController, SignaturePopupDelegete {
     var editTicketViewModel:EditTicketViewModel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
@@ -16,8 +16,10 @@ class EditTicketViewController: UIViewController {
     @IBOutlet weak var locationName: CustomUITextField!
     @IBOutlet weak var address: CustomUITextField!
     @IBOutlet var signaturePopup: SignaturePopup!
+    @IBOutlet weak var btnSignature: CustomUIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        signaturePopup.delegate = self;
     }
     func setUp(editTicketViewModel:EditTicketViewModel){
         
@@ -30,6 +32,24 @@ class EditTicketViewController: UIViewController {
         scrollView.contentSize = CGSize(width: containerView.frame.width, height: containerView.frame.width + 600.0)
     }
     @IBAction func tempPrint(_ sender: Any) {
-       self.view.addSubview(signaturePopup)
+        
+    }
+    func didClose(signatureData: UIImage) {        
+        
+        btnSignature.setImage(signatureData, for: UIControlState.normal)
+        signaturePopup.removeFromSuperview()
+        
+    }
+    
+    func didClear() {
+        
+    }
+    
+    func didDelete() {
+        
+    }
+    @IBAction func actionOpenSignaturePopup(_ sender: Any) {
+        signaturePopup.center = CGPoint(x: self.view.frame.size.width  / 2, y: self.view.frame.size.height / 2)
+        self.view.addSubview(signaturePopup)
     }
 }
