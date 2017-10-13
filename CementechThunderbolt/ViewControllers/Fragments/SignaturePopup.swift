@@ -65,6 +65,10 @@ class SignaturePopup: UIView {
     }
     @IBAction func actionClose(_ sender: Any) {
         let signatureData = signatureCanvas.getSignature()
-        delegate.didClose(signatureData: signatureData!)
+        if(signatureData != nil){
+            delegate.didClose(signatureData: signatureData!)
+        } else {
+            delegate.didClose(signatureData: UIImage())
+        }
     }
 }

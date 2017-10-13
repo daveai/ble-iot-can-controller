@@ -8,6 +8,7 @@
 
 import UIKit
 import LayerUIExtention
+import Bond
 class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     var createTicketViewModel:CreateTicketViewModel = CreateTicketViewModel()
     @IBOutlet weak var scrollView: UIScrollView!
@@ -16,6 +17,7 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
     @IBOutlet weak var txtMixDesign: CustomUITextField!
     @IBOutlet weak var state: CustomUITextField!
     @IBOutlet weak var cubicYardage: CustomUITextField!
+    private let viewModel = CreateTicketViewModel()
     @IBOutlet weak var costPerYeardCube: CustomUITextField!
     @IBOutlet weak var additionalCost: CustomUITextField!
     @IBOutlet weak var totalCost: CustomUITextField!
@@ -41,7 +43,7 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         state.inputAccessoryView = toolBar
-        
+        viewModel.customerName.bidirectionalBind(to:cubicYardage.reactive.text)
         
         
     }

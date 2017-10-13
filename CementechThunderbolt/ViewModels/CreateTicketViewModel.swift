@@ -7,6 +7,18 @@
 //
 
 import UIKit
+import Bond
 class CreateTicketViewModel  {
+    let customerName = Observable<String?>("")
     
+    init() {
+        customerName.value = "Bond"
+        
+        _ = customerName.observeNext {
+            text in
+            if let text = text {
+                print(text)
+            }
+        }
+    }
 }
