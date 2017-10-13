@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		143EA4114121237BA227CC2A /* Pods_CementechThunderboltUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CC538C728F53BE77233002 /* Pods_CementechThunderboltUITests.framework */; };
 		3A09CC131F8652540093F9E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A09CC121F8652540093F9E4 /* QuartzCore.framework */; };
+		3A1858BD1F90BCCE00F4AA6C /* SignaturePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1858BC1F90BCCE00F4AA6C /* SignaturePopup.xib */; };
+		3A1858BF1F90BFEB00F4AA6C /* SignaturePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */; };
+		3A1A0EE71F8FC1E30092A988 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */; };
 		3A460ADC1F8CAEEF00E92984 /* ListTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */; };
 		3A460ADF1F8CAFAA00E92984 /* TicketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */; };
 		3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A64F3C31F87968200EB53A2 /* Pilots.storyboard */; };
@@ -21,6 +24,7 @@
 		3A87E2B11F8D0EAB0099B232 /* LayerUIExtention.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A87E2A91F8D0EAA0099B232 /* LayerUIExtention.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A87E2B71F8D0ECB0099B232 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87E2B61F8D0ECB0099B232 /* CustomUIView.swift */; };
 		3A87E2BB1F8D10540099B232 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87E2BA1F8D10540099B232 /* CustomUIButton.swift */; };
+		3A8F885F1F909F5100297FBF /* CreateTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8F885E1F909F5100297FBF /* CreateTicketViewModel.swift */; };
 		3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB737F1F8F4F8C001099C0 /* EditTicketViewModel.swift */; };
 		3AAB73821F8F5672001099C0 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB73811F8F5672001099C0 /* TicketModel.swift */; };
 		3AAB73831F8F587E001099C0 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87E2B81F8D0EED0099B232 /* CustomUITextField.swift */; };
@@ -84,6 +88,9 @@
 /* Begin PBXFileReference section */
 		3A09CC121F8652540093F9E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3A09CC181F8656310093F9E4 /* PTSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSans.ttc; sourceTree = "<group>"; };
+		3A1858BC1F90BCCE00F4AA6C /* SignaturePopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignaturePopup.xib; sourceTree = "<group>"; };
+		3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePopup.swift; sourceTree = "<group>"; };
+		3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTicketsViewController.swift; sourceTree = "<group>"; };
 		3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListTableViewCell.swift; sourceTree = "<group>"; };
 		3A64F3C31F87968200EB53A2 /* Pilots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pilots.storyboard; sourceTree = "<group>"; };
@@ -97,6 +104,7 @@
 		3A87E2B61F8D0ECB0099B232 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		3A87E2B81F8D0EED0099B232 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		3A87E2BA1F8D10540099B232 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		3A8F885E1F909F5100297FBF /* CreateTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewModel.swift; sourceTree = "<group>"; };
 		3AAB737F1F8F4F8C001099C0 /* EditTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketViewModel.swift; sourceTree = "<group>"; };
 		3AAB73811F8F5672001099C0 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		3ABA91F41F860D0D00E5E0D3 /* CementechThunderbolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CementechThunderbolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				3AAB737F1F8F4F8C001099C0 /* EditTicketViewModel.swift */,
+				3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */,
+				3A8F885E1F909F5100297FBF /* CreateTicketViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -363,6 +373,7 @@
 			children = (
 				3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */,
 				3AEB88401F87710400D56593 /* LeftMenuCell.xib */,
+				3A1858BC1F90BCCE00F4AA6C /* SignaturePopup.xib */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -372,6 +383,7 @@
 			children = (
 				3AEB883E1F87641500D56593 /* LeftMenuView.swift */,
 				3AEB88421F87720100D56593 /* LeftMenuTableViewCell.swift */,
+				3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -557,6 +569,7 @@
 				3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */,
 				3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */,
 				3AEB88391F875CDE00D56593 /* DashboardRoot.storyboard in Resources */,
+				3A1858BD1F90BCCE00F4AA6C /* SignaturePopup.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,12 +615,16 @@
 				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -745,15 +762,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1858BF1F90BFEB00F4AA6C /* SignaturePopup.swift in Sources */,
 				3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */,
 				3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */,
 				3ABA91FA1F860D0D00E5E0D3 /* ViewController.swift in Sources */,
 				3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */,
 				3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */,
 				3A460ADC1F8CAEEF00E92984 /* ListTicketsViewController.swift in Sources */,
+				3A1A0EE71F8FC1E30092A988 /* Dynamic.swift in Sources */,
 				3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */,
 				3AAB73821F8F5672001099C0 /* TicketModel.swift in Sources */,
 				3ABA92001F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld in Sources */,
+				3A8F885F1F909F5100297FBF /* CreateTicketViewModel.swift in Sources */,
 				3AEB883F1F87641500D56593 /* LeftMenuView.swift in Sources */,
 				3A460ADF1F8CAFAA00E92984 /* TicketListTableViewCell.swift in Sources */,
 				3AEB88431F87720100D56593 /* LeftMenuTableViewCell.swift in Sources */,

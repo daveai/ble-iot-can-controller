@@ -8,8 +8,6 @@
 
 import UIKit
 import LayerUIExtention
-import ReactiveKit
-import Bond
 class EditTicketViewController: UIViewController {
     var editTicketViewModel:EditTicketViewModel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,10 +15,9 @@ class EditTicketViewController: UIViewController {
     @IBOutlet var customerName: CustomUITextField!
     @IBOutlet weak var locationName: CustomUITextField!
     @IBOutlet weak var address: CustomUITextField!
+    @IBOutlet var signaturePopup: SignaturePopup!
     override func viewDidLoad() {
         super.viewDidLoad()
-        editTicketViewModel = EditTicketViewModel(ticketModel: TicketModel(customerName: "Hello"))
-        editTicketViewModel.customerName.bind(to: self.customerName)        
     }
     func setUp(editTicketViewModel:EditTicketViewModel){
         
@@ -33,6 +30,6 @@ class EditTicketViewController: UIViewController {
         scrollView.contentSize = CGSize(width: containerView.frame.width, height: containerView.frame.width + 600.0)
     }
     @IBAction func tempPrint(_ sender: Any) {
-        editTicketViewModel.customerName.value = "Hey"
+       self.view.addSubview(signaturePopup)
     }
 }

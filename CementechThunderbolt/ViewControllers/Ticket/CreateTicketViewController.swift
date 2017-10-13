@@ -9,11 +9,17 @@
 import UIKit
 import LayerUIExtention
 class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    var createTicketViewModel:CreateTicketViewModel = CreateTicketViewModel()
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
     var picker = UIPickerView()
     @IBOutlet weak var txtMixDesign: CustomUITextField!
-    @IBOutlet weak var state: CustomUITextField!   
+    @IBOutlet weak var state: CustomUITextField!
+    @IBOutlet weak var cubicYardage: CustomUITextField!
+    @IBOutlet weak var costPerYeardCube: CustomUITextField!
+    @IBOutlet weak var additionalCost: CustomUITextField!
+    @IBOutlet weak var totalCost: CustomUITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,9 +38,11 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
         let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker(sender:)))
         
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
-        toolBar.isUserInteractionEnabled = true    
-        
+        toolBar.isUserInteractionEnabled = true
         state.inputAccessoryView = toolBar
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

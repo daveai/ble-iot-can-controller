@@ -8,18 +8,9 @@
 
 import UIKit
 import LayerUIExtention
-import ReactiveKit
-import Bond
 class EditTicketViewModel: NSObject {
     private var ticketModel:TicketModel!
-    var customerName = Observable<String>("")
-    init(ticketModel:TicketModel) {
-        self.ticketModel = ticketModel
-        customerName.value = ticketModel.customerName
-        customerName.observeNext { newValue in
-            
-        }
-    }
+    
     
     
 }
