@@ -8,7 +8,7 @@
 
 import UIKit
 import LayerUIExtention
-class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     var createTicketViewModel:CreateTicketViewModel = CreateTicketViewModel()
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
@@ -75,8 +75,30 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
     @objc func donePicker (sender:UIBarButtonItem){
         state.text = selectedState
         state.resignFirstResponder()
-        
+    }
+    @IBAction func btnUploadPicture(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
-    
+}
+extension UIImagePickerController
+{
+    override open var shouldAutorotate: Bool {
+        return true
+    }
+    override open var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return .all
+    }
 }
