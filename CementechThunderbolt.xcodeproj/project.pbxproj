@@ -37,7 +37,10 @@
 		3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABA92031F860D0D00E5E0D3 /* LaunchScreen.storyboard */; };
 		3ABA92101F860D0E00E5E0D3 /* CementechThunderboltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA920F1F860D0E00E5E0D3 /* CementechThunderboltTests.swift */; };
 		3ABA921B1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */; };
+		3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0A1F94C46400594BC8 /* AddNote.xib */; };
+		3ADEDC0D1F94C7BF00594BC8 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */; };
 		3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */; };
+		3AE2223A1F94DA290013A2B8 /* PTSans.ttc in Sources */ = {isa = PBXBuildFile; fileRef = 3A09CC181F8656310093F9E4 /* PTSans.ttc */; };
 		3AEB88391F875CDE00D56593 /* DashboardRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB88381F875CDE00D56593 /* DashboardRoot.storyboard */; };
 		3AEB883C1F875DEC00D56593 /* LeftMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */; };
 		3AEB883F1F87641500D56593 /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB883E1F87641500D56593 /* LeftMenuView.swift */; };
@@ -123,6 +126,8 @@
 		3ABA92161F860D0E00E5E0D3 /* CementechThunderboltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CementechThunderboltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CementechThunderboltUITests.swift; sourceTree = "<group>"; };
 		3ABA921C1F860D0E00E5E0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADEDC0A1F94C46400594BC8 /* AddNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNote.xib; sourceTree = "<group>"; };
+		3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
 		3AEB88381F875CDE00D56593 /* DashboardRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardRoot.storyboard; sourceTree = "<group>"; };
 		3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuView.xib; sourceTree = "<group>"; };
@@ -385,6 +390,7 @@
 				3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */,
 				3AEB88401F87710400D56593 /* LeftMenuCell.xib */,
 				3A1858BC1F90BCCE00F4AA6C /* SignaturePopup.xib */,
+				3ADEDC0A1F94C46400594BC8 /* AddNote.xib */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 				3AEB883E1F87641500D56593 /* LeftMenuView.swift */,
 				3AEB88421F87720100D56593 /* LeftMenuTableViewCell.swift */,
 				3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */,
+				3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -579,6 +586,7 @@
 				3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */,
 				3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */,
 				3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */,
+				3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */,
 				3AEB88391F875CDE00D56593 /* DashboardRoot.storyboard in Resources */,
 				3A1858BD1F90BCCE00F4AA6C /* SignaturePopup.xib in Resources */,
 			);
@@ -769,6 +777,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE2223A1F94DA290013A2B8 /* PTSans.ttc in Sources */,
+				3ADEDC0D1F94C7BF00594BC8 /* AddNote.swift in Sources */,
 				3A1858BF1F90BFEB00F4AA6C /* SignaturePopup.swift in Sources */,
 				3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */,
 				3A1858C41F90C8EA00F4AA6C /* YPDrawSignatureView.swift in Sources */,
