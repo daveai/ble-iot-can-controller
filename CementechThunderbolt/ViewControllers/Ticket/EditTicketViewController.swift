@@ -69,10 +69,38 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
         self.view.addSubview(signaturePopup)
     }
     func bindWithViewModel(viewModel:EditTicketViewModel){
-        viewModel.estimatedCubicYardage.bidirectionalBind(to:estimatedCubicYardage.reactive.text)
+        viewModel.estimatedCubicYardage.bind(to:estimatedCubicYardage.reactive.text)
+        viewModel.costPerCubicYardage.bind(to:costPerCubicYardage.reactive.text)
+        viewModel.additionalCost.bind(to:additionalCost.reactive.text)
+        viewModel.totalCost.bind(to: totalPrice.reactive.text)
+        _ = self.estimatedCubicYardage.reactive.text.observeNext { (newValue) in
+            if (newValue != nil && newValue != "" && Double(newValue!) != nil) {
+                self.estimatedCubicYardage.textColor = .black
+                viewModel.estimatedCubicYardage.value = newValue!
+            } else {
+                self.estimatedCubicYardage.textColor = .red
+            }
+        }
+        _ = self.costPerCubicYardage.reactive.text.observeNext { (newValue) in
+            if (newValue != nil && newValue != "" && Double(newValue!) != nil) {
+                self.costPerCubicYardage.textColor = .black
+                viewModel.costPerCubicYardage.value = newValue!
+            } else {
+                self.costPerCubicYardage.textColor = .red
+            }
+        }
+        _ = self.additionalCost.reactive.text.observeNext { (newValue) in
+            if (newValue != nil && newValue != "" && Double(newValue!) != nil) {
+                self.additionalCost.textColor = .black
+                viewModel.additionalCost.value = newValue!
+            } else {
+                self.additionalCost.textColor = .red
+            }
+        }
+        /*viewModel.estimatedCubicYardage.bidirectionalBind(to:estimatedCubicYardage.reactive.text)
         viewModel.costPerCubicYardage.bidirectionalBind(to:costPerCubicYardage.reactive.text)
         viewModel.additionalCost.bidirectionalBind(to:additionalCost.reactive.text)
-        viewModel.totalCost.bidirectionalBind(to: totalPrice.reactive.text)
+        viewModel.totalCost.bidirectionalBind(to: totalPrice.reactive.text)*/
     }
     
     func didNoteAdded(note: String) {
@@ -82,5 +110,12 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
     
     func didAddNotePopupClose() {
         addNotePopup.removeFromSuperview()
+    }
+}
+extension String  {
+    var isNumber : Bool {
+        get{
+            return !self.isEmpty && self.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+        }
     }
 }
