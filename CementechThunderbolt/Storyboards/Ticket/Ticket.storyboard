@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0ML-eO-vEe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ML-eO-vEe">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,6 +25,10 @@
         <scene sceneID="Ttk-Hr-7a0">
             <objects>
                 <viewController id="QoL-1M-o0G" customClass="CreateTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zMa-Yz-6M8"/>
+                        <viewControllerLayoutGuide type="bottom" id="KmN-JO-Mav"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W7I-Xc-WG1">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -675,13 +679,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U3t-h2-5hH" firstAttribute="width" secondItem="W7I-Xc-WG1" secondAttribute="width" id="AuR-PP-OcB"/>
-                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="top" secondItem="0eO-WJ-py1" secondAttribute="top" id="T3P-bb-IJV"/>
-                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="leading" secondItem="0eO-WJ-py1" secondAttribute="leading" id="cgT-hX-Pqz"/>
-                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="bottom" secondItem="0eO-WJ-py1" secondAttribute="bottom" id="dGZ-5P-lIj"/>
-                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="trailing" secondItem="0eO-WJ-py1" secondAttribute="trailing" id="gwa-We-WqT"/>
+                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="top" secondItem="zMa-Yz-6M8" secondAttribute="bottom" id="T3P-bb-IJV"/>
+                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="leading" secondItem="W7I-Xc-WG1" secondAttribute="leading" id="cgT-hX-Pqz"/>
+                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="bottom" secondItem="KmN-JO-Mav" secondAttribute="top" id="dGZ-5P-lIj"/>
+                            <constraint firstItem="BkV-Uz-UaS" firstAttribute="trailing" secondItem="W7I-Xc-WG1" secondAttribute="trailing" id="gwa-We-WqT"/>
                             <constraint firstItem="U3t-h2-5hH" firstAttribute="height" secondItem="W7I-Xc-WG1" secondAttribute="height" constant="273" id="rEd-Dv-4E8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0eO-WJ-py1"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Ticket" id="uDB-O6-asP">
                         <barButtonItem key="rightBarButtonItem" title="Create" id="P2x-d2-Hzi"/>
@@ -723,6 +726,10 @@
         <scene sceneID="mdK-HY-ep7">
             <objects>
                 <viewController id="tKF-Uu-4QB" customClass="ListTicketsViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hT-f8-HIM"/>
+                        <viewControllerLayoutGuide type="bottom" id="UHL-ZA-qIA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z5O-WJ-bJB">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -954,18 +961,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="onv-Xu-zmv" firstAttribute="leading" secondItem="uoa-6w-t6g" secondAttribute="leading" id="NvY-Lt-BfS"/>
-                            <constraint firstItem="2QB-Np-eHH" firstAttribute="top" secondItem="uoa-6w-t6g" secondAttribute="top" constant="15" id="Qmb-Ew-iaH"/>
-                            <constraint firstItem="onv-Xu-zmv" firstAttribute="trailing" secondItem="uoa-6w-t6g" secondAttribute="trailing" id="RoJ-Bq-kzS"/>
-                            <constraint firstItem="JXX-BF-lzZ" firstAttribute="top" secondItem="uoa-6w-t6g" secondAttribute="top" constant="15" id="SkO-My-1Se"/>
-                            <constraint firstItem="N2X-T3-umv" firstAttribute="top" secondItem="uoa-6w-t6g" secondAttribute="top" constant="15" id="Zc7-ia-vnD"/>
-                            <constraint firstItem="onv-Xu-zmv" firstAttribute="bottom" secondItem="uoa-6w-t6g" secondAttribute="bottom" id="ayE-UL-VCi"/>
-                            <constraint firstItem="uoa-6w-t6g" firstAttribute="trailing" secondItem="2QB-Np-eHH" secondAttribute="trailing" constant="20" id="qVU-L9-1xq"/>
+                            <constraint firstItem="onv-Xu-zmv" firstAttribute="leading" secondItem="Z5O-WJ-bJB" secondAttribute="leading" id="NvY-Lt-BfS"/>
+                            <constraint firstItem="2QB-Np-eHH" firstAttribute="top" secondItem="3hT-f8-HIM" secondAttribute="bottom" constant="15" id="Qmb-Ew-iaH"/>
+                            <constraint firstItem="onv-Xu-zmv" firstAttribute="trailing" secondItem="Z5O-WJ-bJB" secondAttribute="trailing" id="RoJ-Bq-kzS"/>
+                            <constraint firstItem="JXX-BF-lzZ" firstAttribute="top" secondItem="3hT-f8-HIM" secondAttribute="bottom" constant="15" id="SkO-My-1Se"/>
+                            <constraint firstItem="N2X-T3-umv" firstAttribute="top" secondItem="3hT-f8-HIM" secondAttribute="bottom" constant="15" id="Zc7-ia-vnD"/>
+                            <constraint firstItem="onv-Xu-zmv" firstAttribute="bottom" secondItem="UHL-ZA-qIA" secondAttribute="top" id="ayE-UL-VCi"/>
+                            <constraint firstAttribute="trailing" secondItem="2QB-Np-eHH" secondAttribute="trailing" constant="20" id="qVU-L9-1xq"/>
                             <constraint firstItem="onv-Xu-zmv" firstAttribute="top" secondItem="N2X-T3-umv" secondAttribute="bottom" constant="25" id="tSb-81-zaw"/>
                             <constraint firstItem="JXX-BF-lzZ" firstAttribute="leading" secondItem="yFa-cJ-TkG" secondAttribute="trailing" constant="20" id="up9-1h-SXv"/>
-                            <constraint firstItem="N2X-T3-umv" firstAttribute="leading" secondItem="uoa-6w-t6g" secondAttribute="leading" constant="25" id="wst-Ey-7iN"/>
+                            <constraint firstItem="N2X-T3-umv" firstAttribute="leading" secondItem="Z5O-WJ-bJB" secondAttribute="leading" constant="25" id="wst-Ey-7iN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uoa-6w-t6g"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tickets" id="unh-bX-1p9">
                         <barButtonItem key="backBarButtonItem" title="Tickets" id="7JX-V2-x8w"/>
@@ -987,15 +993,19 @@
         <scene sceneID="BKL-Jo-ECa">
             <objects>
                 <viewController id="arc-kp-lea" customClass="EditTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UPB-lx-RQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="mdI-qa-QrF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8nF-Fh-SoL">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-wF-syc">
-                                <rect key="frame" x="0.0" y="144" width="1024" height="624"/>
+                                <rect key="frame" x="0.0" y="135" width="1024" height="633"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-7v-XFe">
-                                        <rect key="frame" x="0.0" y="-600" width="1024" height="1692"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1692"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5n-XK-tVx">
                                                 <rect key="frame" x="36" y="10" width="55" height="21"/>
@@ -1515,13 +1525,13 @@
                                                 <state key="normal" image="notebutton"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ht-Fb-Kj1">
-                                                <rect key="frame" x="36" y="975" width="105" height="20"/>
+                                                <rect key="frame" x="36" y="975" width="97" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attached three images — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auL-vt-Itt">
-                                                <rect key="frame" x="149" y="975" width="286.5" height="20"/>
+                                                <rect key="frame" x="141" y="975" width="268" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1594,13 +1604,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xx-xC-mgt">
-                                                <rect key="frame" x="36" y="1221" width="105" height="20"/>
+                                                <rect key="frame" x="36" y="1221" width="97" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a customer signature — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-kh-oEu">
-                                                <rect key="frame" x="149" y="1221" width="330.5" height="20"/>
+                                                <rect key="frame" x="141" y="1221" width="307.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1736,7 +1746,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="YLt-7v-XFe" secondAttribute="bottom" constant="-988" id="UY8-x3-adG"/>
                                     <constraint firstItem="YLt-7v-XFe" firstAttribute="leading" secondItem="gtr-wF-syc" secondAttribute="leading" id="iAW-BH-avo"/>
-                                    <constraint firstItem="YLt-7v-XFe" firstAttribute="top" secondItem="gtr-wF-syc" secondAttribute="top" constant="-600" id="jvu-aL-UYf"/>
+                                    <constraint firstItem="YLt-7v-XFe" firstAttribute="top" secondItem="gtr-wF-syc" secondAttribute="top" id="jvu-aL-UYf"/>
                                     <constraint firstAttribute="trailing" secondItem="YLt-7v-XFe" secondAttribute="trailing" id="lXt-1g-sqH"/>
                                 </constraints>
                             </scrollView>
@@ -1948,26 +1958,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="4Zv-KK-l4R"/>
-                            <constraint firstItem="PLo-7i-Kg1" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="5Bc-wo-fbg"/>
+                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="4Zv-KK-l4R"/>
+                            <constraint firstItem="PLo-7i-Kg1" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="5Bc-wo-fbg"/>
                             <constraint firstItem="YLt-7v-XFe" firstAttribute="width" secondItem="8nF-Fh-SoL" secondAttribute="width" id="7Pp-ba-bZ9"/>
                             <constraint firstItem="C3n-Xl-IAc" firstAttribute="leading" secondItem="ZaB-rp-GCF" secondAttribute="trailing" constant="8" id="8EG-Bh-5Yp"/>
-                            <constraint firstItem="gtr-wF-syc" firstAttribute="trailing" secondItem="Tjf-d1-5vR" secondAttribute="trailing" id="EWb-8S-BOc"/>
-                            <constraint firstItem="C3n-Xl-IAc" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="JeJ-Gd-Pey"/>
-                            <constraint firstItem="gtr-wF-syc" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="80" id="SLQ-kM-ZIj"/>
-                            <constraint firstItem="gtr-wF-syc" firstAttribute="leading" secondItem="Tjf-d1-5vR" secondAttribute="leading" id="U5i-tn-scV"/>
-                            <constraint firstItem="RfS-Sl-Sl3" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="UTa-Ck-knS"/>
-                            <constraint firstItem="Tjf-d1-5vR" firstAttribute="trailing" secondItem="C3n-Xl-IAc" secondAttribute="trailing" constant="36" id="XUK-lJ-a4D"/>
-                            <constraint firstItem="SPk-FG-uFZ" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="XhH-ZP-M5z"/>
+                            <constraint firstItem="gtr-wF-syc" firstAttribute="trailing" secondItem="8nF-Fh-SoL" secondAttribute="trailing" id="EWb-8S-BOc"/>
+                            <constraint firstItem="C3n-Xl-IAc" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="JeJ-Gd-Pey"/>
+                            <constraint firstItem="gtr-wF-syc" firstAttribute="leading" secondItem="8nF-Fh-SoL" secondAttribute="leading" id="U5i-tn-scV"/>
+                            <constraint firstItem="RfS-Sl-Sl3" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="UTa-Ck-knS"/>
+                            <constraint firstAttribute="trailing" secondItem="C3n-Xl-IAc" secondAttribute="trailing" constant="36" id="XUK-lJ-a4D"/>
+                            <constraint firstItem="SPk-FG-uFZ" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="XhH-ZP-M5z"/>
+                            <constraint firstItem="gtr-wF-syc" firstAttribute="top" secondItem="mgF-sQ-qYd" secondAttribute="bottom" constant="10" id="d1O-oi-O85"/>
                             <constraint firstItem="YLt-7v-XFe" firstAttribute="height" secondItem="8nF-Fh-SoL" secondAttribute="height" constant="924" id="f7i-5t-SW9"/>
-                            <constraint firstItem="gtr-wF-syc" firstAttribute="bottom" secondItem="Tjf-d1-5vR" secondAttribute="bottom" id="iYV-pU-FpB"/>
-                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="leading" secondItem="Tjf-d1-5vR" secondAttribute="leading" constant="36" id="jwt-VY-Eg9"/>
+                            <constraint firstItem="gtr-wF-syc" firstAttribute="bottom" secondItem="mdI-qa-QrF" secondAttribute="top" id="iYV-pU-FpB"/>
+                            <constraint firstItem="mgF-sQ-qYd" firstAttribute="leading" secondItem="8nF-Fh-SoL" secondAttribute="leading" constant="36" id="jwt-VY-Eg9"/>
                             <constraint firstItem="RfS-Sl-Sl3" firstAttribute="leading" secondItem="mgF-sQ-qYd" secondAttribute="trailing" constant="8" id="lnd-jW-6vZ"/>
                             <constraint firstItem="SPk-FG-uFZ" firstAttribute="leading" secondItem="RfS-Sl-Sl3" secondAttribute="trailing" constant="8" id="oem-Yj-sP5"/>
-                            <constraint firstItem="ZaB-rp-GCF" firstAttribute="top" secondItem="Tjf-d1-5vR" secondAttribute="top" constant="25" id="p8W-yr-2Up"/>
+                            <constraint firstItem="ZaB-rp-GCF" firstAttribute="top" secondItem="UPB-lx-RQe" secondAttribute="bottom" constant="25" id="p8W-yr-2Up"/>
                             <constraint firstItem="PLo-7i-Kg1" firstAttribute="leading" secondItem="SPk-FG-uFZ" secondAttribute="trailing" constant="8" id="tzb-Oa-lGK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Tjf-d1-5vR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Ticket" id="CV3-n8-Yhx">
                         <barButtonItem key="rightBarButtonItem" title="Update" id="NoE-Fw-Ztb"/>
@@ -1992,13 +2001,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="750" height="560"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <viewLayoutGuide key="safeArea" id="Lgn-bm-VEw"/>
                 </view>
                 <view contentMode="scaleToFill" id="97C-rl-Py1" customClass="AddNote" customModule="CementechThunderbolt" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="710" height="321"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <viewLayoutGuide key="safeArea" id="lNj-8n-GVk"/>
                 </view>
             </objects>
             <point key="canvasLocation" x="926.95312499999989" y="1222.65625"/>
