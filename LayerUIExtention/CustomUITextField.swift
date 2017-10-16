@@ -66,9 +66,9 @@ import UIKit
     
     @IBInspectable var paddingLeft: CGFloat = 0
     @IBInspectable var paddingRight: CGFloat = 0
-    
+    @IBInspectable var paddingTop: CGFloat = 0
     override public func textRect(forBounds bounds: CGRect) -> CGRect {
-        return CGRect(x: bounds.origin.x + paddingLeft, y: bounds.origin.y, width: bounds.size.width - paddingLeft - paddingRight, height: bounds.size.height)
+        return CGRect(x: bounds.origin.x + paddingLeft, y: bounds.origin.y + paddingTop, width: bounds.size.width - paddingLeft - paddingRight, height: bounds.size.height)
     }
     
     override public func editingRect(forBounds bounds: CGRect) -> CGRect {
