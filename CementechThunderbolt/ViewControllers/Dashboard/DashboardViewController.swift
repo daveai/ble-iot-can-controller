@@ -12,7 +12,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
-        StoryBoard(storyBoardName: "Ticket", display: "Ticket")
+        StoryBoard(storyBoardName: "Ticket", display: "Ticket"),
+        StoryBoard(storyBoardName: "Modes", display: "Modes")
     ];
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller

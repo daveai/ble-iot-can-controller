@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" />
+         <link type="text/css" rel="stylesheet" href="./styles/style.css" />
+   </head>
+   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <h4 class="chart_heading">Total material on a truck.</h4>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-12">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-6 table_header">
+          <div class="row">
+            <div class="col-4">
+              <button class="btn-link delete_button">- Delete</button>
+            </div>
+            <div class="col-4 mix_design_heading">
+              <h4 class="heading_20px">Mix Design</h4>
+            </div>
+            <div class="col-4">
+              <button class="btn-link add_button">+ Add</button>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Maks' design</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              
+            </div>
+            <div class="col-4">
+              <button class="btn-link"> > </button>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Mix Design 1</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              
+            </div>
+            <div class="col-4">
+              <button class="btn-link"> > </button>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Mix Design 2</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              
+            </div>
+            <div class="col-4">
+              <button class="btn-link"> > </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 table_header">
+          <div class="row">
+            <div class="col-4">
+              
+            </div>
+            <div class="col-4 mix_design_heading">
+              <h4 class="heading_20px">Maks' Design</h4>
+            </div>
+            <div class="col-4">
+              <button class="btn-link add_button">+ Select</button>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Cement</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              <div class="row">
+                <div class="col-8">
+                  <input type="text" class="form-control" /> 
+                </div>
+                <div class="col-4">
+                  <span class="yard_cube">yd<sup>3</sup></span>
+                </div>  
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="btn-group mix_design_button_group">
+                <button type="button" class="btn btn-primary">-</button>
+                <button type="button" class="btn btn-primary">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Water</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              <div class="row">
+                <div class="col-8">
+                  <input type="text" class="form-control" /> 
+                </div>
+                <div class="col-4">
+                  <span class="yard_cube">yd<sup>3</sup></span>
+                </div>  
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="btn-group mix_design_button_group">
+                <button type="button" class="btn btn-primary">-</button>
+                <button type="button" class="btn btn-primary">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="row table_row">
+            <div class="col-4">
+              <h6 class="table_row_text">Sand</h6>
+            </div>
+            <div class="col-4 mix_design_heading">
+              <div class="row">
+                <div class="col-8">
+                  <input type="text" class="form-control" /> 
+                </div>
+                <div class="col-4">
+                  <span class="yard_cube">yd<sup>3</sup></span>
+                </div>  
+              </div>            
+            </div>
+            <div class="col-4">
+              <div class="btn-group mix_design_button_group">
+                <button type="button" class="btn btn-primary">-</button>
+                <button type="button" class="btn btn-primary">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>         
+    </div>
+    <script type="text/javascript" src="./node_modules/chart.js/dist/Chart.min.js"></script>
+    <script type="text/javascript">
+ 	  	var ctx = document.getElementById('myChart').getContext('2d');
+      var chartData =  {
+          labels: ["Cement", "Water", "Sand", "Stone", "Latex", "Admix 1", "Admix 2", "Fiber"],
+          datasets: [{
+             label: "Total Material on truck",
+             backgroundColor: 'rgb(255, 99, 132)',
+             borderColor: 'rgb(255, 99, 132)',
+             data: [8, 10, 5, 11, 20, 8, 22, 20],
+         }]
+      }
+    	var chart = new Chart(ctx, {
+    	    type: 'bar',
+    	    data:chartData,
+    	    options: {
+            scales: {
+              xAxes: [
+                {
+                  display: true,
+                    scaleLabel: {
+                      display: true,                      
+                    }
+                }
+              ],
+              yAxes: [
+                {
+                  display: true,
+                  ticks: {
+                    beginAtZero: true,
+                    steps: 10,
+                    stepValue: 5,
+                    max: 25
+                  },
+                  scaleLabel: {
+                    display: true, 
+                    labelString: "yd3"                     
+                  }
+                }
+              ]
+            },
+                                
+          }
+    	});
+ 	  </script>
+   </body>
+ </html>

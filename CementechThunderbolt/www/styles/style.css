@@ -1,0 +1,62 @@
+html {
+	height: 100%;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	height: 100%;
+}
+.chart_heading {
+	font-size: 20px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.heading_20px {
+	font-size: 20px;
+}
+.add_button {
+	float: right;
+	color: #CB2127;
+	text-decoration: none;
+    outline: none;
+}
+.delete_button {
+	float: left;
+	color: #CB2127;
+	text-decoration: none;
+    outline: none;
+}
+.mix_design_heading {
+	text-align: center;
+}
+.table_header {
+	padding-top: 10px;
+    border: 1px solid #DADADA;
+}
+.table_row {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #DADADA;
+    height: 60px;
+}
+.table_row_text {
+	padding-top: 13px;
+}
+.table_row > .col-4 > button {
+	float: right;
+    width: 20px;
+    font-size: 18px;
+    color: #DADADA;
+}
+.yard_cube {
+    display: block;
+    padding-top: 5px;
+}
+.mix_design_button_group > .btn {
+	background-color: #F5F5F5;
+	border-color: #AAAAAA;
+	color: #AAAAAA;
+	outline: none;
+}
+.mix_design_button_group {
+	float: right;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xYv-wx-UQR">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Operation Mode-->
+        <scene sceneID="sYI-jt-cXx">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ItR-z8-Dq6" customClass="ModesViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vuq-gB-PVq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qPY-Ya-VAi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sWK-dc-wAb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-W4-WIx">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ItR-z8-Dq6" id="3D8-6m-kSb"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jgg-W4-WIx" secondAttribute="trailing" id="KJW-Lx-ELD"/>
+                            <constraint firstItem="qPY-Ya-VAi" firstAttribute="top" secondItem="Jgg-W4-WIx" secondAttribute="bottom" id="TAq-AR-EMY"/>
+                            <constraint firstItem="Jgg-W4-WIx" firstAttribute="top" secondItem="Vuq-gB-PVq" secondAttribute="bottom" id="quT-wM-ZKd"/>
+                            <constraint firstItem="Jgg-W4-WIx" firstAttribute="leading" secondItem="sWK-dc-wAb" secondAttribute="leading" id="ygJ-Is-LV6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Operation Mode" id="eg9-hO-1wV">
+                        <barButtonItem key="leftBarButtonItem" title="Set Maximum" id="StB-38-zSN"/>
+                        <barButtonItem key="rightBarButtonItem" title="+ Material" id="83P-Vp-mfK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="Jgg-W4-WIx" id="jtU-xr-o8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFs-IY-Rvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-14"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WzV-Bj-gnZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xYv-wx-UQR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8LH-EC-LKA">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ItR-z8-Dq6" kind="relationship" relationship="rootViewController" id="wGV-tR-CnS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jei-A0-ZID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1182.421875" y="-14.0625"/>
+        </scene>
+    </scenes>
+</document>
