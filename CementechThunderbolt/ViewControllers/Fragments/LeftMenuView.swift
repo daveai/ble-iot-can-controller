@@ -27,6 +27,7 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -81,6 +82,10 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
         cell.contentView.backgroundColor = UIColor.clear
         cell.backgroundView = UIView()
         cell.selectedBackgroundView = UIView()
+        if(indexPath.row == 0){
+            cell.selectionTriangle.isHidden = false
+            self.selectedMenu = cell
+        }
         return cell
     }
     
@@ -93,5 +98,5 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.selectedMenu?.selectionTriangle.isHidden = false
         delegate?.didSelectMenu(menu: menuItems[indexPath.row])
     }
-
+    
 }
