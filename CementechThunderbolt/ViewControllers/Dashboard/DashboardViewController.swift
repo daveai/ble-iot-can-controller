@@ -65,31 +65,61 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     
     // MARK: - Menu Item Delegates
     func didSelectMenu(menu: StoryBoard) {
-        print(menu.storyBoardName);
-        let childViewController: UINavigationController = {
-            // Load Storyboard
-            let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
-            // Instantiate View Controller
-            let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
-            viewController.accessibilityValue = menu.storyBoardName
-            return viewController
-        }()
-        print(self.childViewControllers);
+        /*print(menu.storyBoardName)
         if(self.childViewControllers.count != 0){
             for child in self.childViewControllers {
-                
-                if(child.accessibilityValue as String! == childViewController.accessibilityValue as String!){
+                print("The child view controller tag is \(child.accessibilityValue! as String!)")
+                if(child.accessibilityValue as String! == menu.storyBoardName){
                     //do not add as child view just present it up
                     print("hello")
-                    //break;
+                    self.container.bringSubview(toFront: child.view)
+                    break;
                 } else {
+                    let childViewController: UINavigationController = {
+                        // Load Storyboard
+                        let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
+                        // Instantiate View Controller
+                        let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+                        viewController.accessibilityValue = menu.storyBoardName
+                        return viewController
+                    }()
                     add(asChildViewController: childViewController)
                 }
             }
         } else {
+            let childViewController: UINavigationController = {
+                // Load Storyboard
+                let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
+                // Instantiate View Controller
+                let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+                viewController.accessibilityValue = menu.storyBoardName
+                return viewController
+            }()
             add(asChildViewController: childViewController)
+        }*/
+        print(self.childViewControllers)
+        var isViewControllerPresent:Bool = false
+        var selectedViewController:UIViewController = UIViewController()
+        for child in self.childViewControllers {
+            if(child.accessibilityValue as String! == menu.storyBoardName){
+                isViewControllerPresent = true
+                selectedViewController = child
+            }
         }
         
+        if(isViewControllerPresent){
+            self.container.bringSubview(toFront: selectedViewController.view)
+        } else {
+            let childViewController: UINavigationController = {
+                // Load Storyboard
+                let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
+                // Instantiate View Controller
+                let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+                viewController.accessibilityValue = menu.storyBoardName
+                return viewController
+            }()
+            add(asChildViewController: childViewController)
+        }
     }
     
 }
