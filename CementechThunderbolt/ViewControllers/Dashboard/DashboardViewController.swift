@@ -12,7 +12,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
-        StoryBoard(storyBoardName: "Ticket", display: "Ticket")
+        StoryBoard(storyBoardName: "Orders", display: "Orders"),
+        //StoryBoard(storyBoardName: "Modes", display: "Modes")
     ];
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller
@@ -63,32 +64,30 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     }
     
     // MARK: - Menu Item Delegates
-    func didSelectMenu(menu: StoryBoard) {
-        print(menu.storyBoardName);
-        let childViewController: UINavigationController = {
-            // Load Storyboard
-            let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
-            // Instantiate View Controller
-            let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
-            viewController.accessibilityValue = menu.storyBoardName
-            return viewController
-        }()
-        print(self.childViewControllers);
-        if(self.childViewControllers.count != 0){
-            for child in self.childViewControllers {
-                
-                if(child.accessibilityValue as String! == childViewController.accessibilityValue as String!){
-                    //do not add as child view just present it up
-                    print("hello")
-                    //break;
-                } else {
-                    add(asChildViewController: childViewController)
-                }
+    func didSelectMenu(menu: StoryBoard) {        
+        print(self.childViewControllers)
+        var isViewControllerPresent:Bool = false
+        var selectedViewController:UIViewController = UIViewController()
+        for child in self.childViewControllers {
+            if(child.accessibilityValue as String! == menu.storyBoardName){
+                isViewControllerPresent = true
+                selectedViewController = child
             }
-        } else {
-            add(asChildViewController: childViewController)
         }
         
+        if(isViewControllerPresent){
+            self.container.bringSubview(toFront: selectedViewController.view)
+        } else {
+            let childViewController: UINavigationController = {
+                // Load Storyboard
+                let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
+                // Instantiate View Controller
+                let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+                viewController.accessibilityValue = menu.storyBoardName
+                return viewController
+            }()
+            add(asChildViewController: childViewController)
+        }
     }
     
 }

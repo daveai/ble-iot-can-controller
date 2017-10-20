@@ -37,10 +37,14 @@
 		3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABA92031F860D0D00E5E0D3 /* LaunchScreen.storyboard */; };
 		3ABA92101F860D0E00E5E0D3 /* CementechThunderboltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA920F1F860D0E00E5E0D3 /* CementechThunderboltTests.swift */; };
 		3ABA921B1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */; };
+		3ADDD0E21F99D0A000DA1CC2 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */; };
 		3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0A1F94C46400594BC8 /* AddNote.xib */; };
 		3ADEDC0D1F94C7BF00594BC8 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */; };
 		3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */; };
 		3AE2223A1F94DA290013A2B8 /* PTSans.ttc in Sources */ = {isa = PBXBuildFile; fileRef = 3A09CC181F8656310093F9E4 /* PTSans.ttc */; };
+		3AE222401F94FDB70013A2B8 /* Modes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE2223F1F94FDB70013A2B8 /* Modes.storyboard */; };
+		3AE222431F95012C0013A2B8 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE222421F95012C0013A2B8 /* ModesViewController.swift */; };
+		3AE222511F950C380013A2B8 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 3AE222501F950C370013A2B8 /* www */; };
 		3AEB88391F875CDE00D56593 /* DashboardRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB88381F875CDE00D56593 /* DashboardRoot.storyboard */; };
 		3AEB883C1F875DEC00D56593 /* LeftMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */; };
 		3AEB883F1F87641500D56593 /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB883E1F87641500D56593 /* LeftMenuView.swift */; };
@@ -126,9 +130,14 @@
 		3ABA92161F860D0E00E5E0D3 /* CementechThunderboltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CementechThunderboltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CementechThunderboltUITests.swift; sourceTree = "<group>"; };
 		3ABA921C1F860D0E00E5E0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orders.storyboard; sourceTree = "<group>"; };
 		3ADEDC0A1F94C46400594BC8 /* AddNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNote.xib; sourceTree = "<group>"; };
 		3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
+		3AE2223F1F94FDB70013A2B8 /* Modes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
+		3AE222421F95012C0013A2B8 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
+		3AE2224B1F9508A00013A2B8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3AE222501F950C370013A2B8 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		3AEB88381F875CDE00D56593 /* DashboardRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardRoot.storyboard; sourceTree = "<group>"; };
 		3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuView.xib; sourceTree = "<group>"; };
 		3AEB883E1F87641500D56593 /* LeftMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuView.swift; sourceTree = "<group>"; };
@@ -186,6 +195,7 @@
 		3A09CC0D1F86312A0093F9E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AE222411F9501110013A2B8 /* Modes */,
 				3A6F0FDD1F8BB4EC005AD863 /* Ticket */,
 				3A64F3C51F8796BD00EB53A2 /* Pilots */,
 				3AEB883D1F87601F00D56593 /* Fragments */,
@@ -198,6 +208,8 @@
 		3A09CC0E1F8631500093F9E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3ADDD0E01F99D06E00DA1CC2 /* Orders */,
+				3AE2223B1F94F2A20013A2B8 /* Modes */,
 				3AE0A2AD1F8B5AAD0008F496 /* Ticket */,
 				3A64F3C21F87965A00EB53A2 /* Pilots */,
 				3ABA92031F860D0D00E5E0D3 /* LaunchScreen.storyboard */,
@@ -343,6 +355,7 @@
 		3ABA91F61F860D0D00E5E0D3 /* CementechThunderbolt */ = {
 			isa = PBXGroup;
 			children = (
+				3AE222501F950C370013A2B8 /* www */,
 				3A1858C21F90C8C500F4AA6C /* Extentions */,
 				3AEB883A1F875D2D00D56593 /* Fragments */,
 				3A09CC171F8656070093F9E4 /* Fonts */,
@@ -354,6 +367,7 @@
 				3ABA92011F860D0D00E5E0D3 /* Assets.xcassets */,
 				3ABA92061F860D0D00E5E0D3 /* Info.plist */,
 				3ABA91FE1F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld */,
+				3AE2224B1F9508A00013A2B8 /* index.html */,
 			);
 			path = CementechThunderbolt;
 			sourceTree = "<group>";
@@ -376,12 +390,36 @@
 			path = CementechThunderboltUITests;
 			sourceTree = "<group>";
 		};
+		3ADDD0E01F99D06E00DA1CC2 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
 		3AE0A2AD1F8B5AAD0008F496 /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
 				3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */,
 			);
 			path = Ticket;
+			sourceTree = "<group>";
+		};
+		3AE2223B1F94F2A20013A2B8 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				3AE2223F1F94FDB70013A2B8 /* Modes.storyboard */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		3AE222411F9501110013A2B8 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				3AE222421F95012C0013A2B8 /* ModesViewController.swift */,
+			);
+			path = Modes;
 			sourceTree = "<group>";
 		};
 		3AEB883A1F875D2D00D56593 /* Fragments */ = {
@@ -579,11 +617,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE222511F950C380013A2B8 /* www in Resources */,
 				3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */,
 				3ABA92021F860D0D00E5E0D3 /* Assets.xcassets in Resources */,
 				3AEB883C1F875DEC00D56593 /* LeftMenuView.xib in Resources */,
 				3AEB88411F87710400D56593 /* LeftMenuCell.xib in Resources */,
+				3AE222401F94FDB70013A2B8 /* Modes.storyboard in Resources */,
 				3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */,
+				3ADDD0E21F99D0A000DA1CC2 /* Orders.storyboard in Resources */,
 				3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */,
 				3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */,
 				3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */,
@@ -783,6 +824,7 @@
 				3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */,
 				3A1858C41F90C8EA00F4AA6C /* YPDrawSignatureView.swift in Sources */,
 				3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */,
+				3AE222431F95012C0013A2B8 /* ModesViewController.swift in Sources */,
 				3ABA91FA1F860D0D00E5E0D3 /* ViewController.swift in Sources */,
 				3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */,
 				3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */,
@@ -1020,6 +1062,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F9A72JHQF;
 				INFOPLIST_FILE = CementechThunderbolt/Info.plist;
@@ -1027,6 +1070,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eway.CementechThunderbolt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1038,6 +1083,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F9A72JHQF;
 				INFOPLIST_FILE = CementechThunderbolt/Info.plist;
@@ -1045,6 +1092,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eway.CementechThunderbolt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

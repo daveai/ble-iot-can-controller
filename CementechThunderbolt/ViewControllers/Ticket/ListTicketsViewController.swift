@@ -38,6 +38,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         if cell == nil {
             cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? TicketListTableViewCell
         }
+        cell.scrollView.contentSize = CGSize(width: cell.scrollView.frame.width + 30000, height: cell.scrollView.frame.height)
         return cell
     }
     
@@ -49,12 +50,12 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         return 72.0
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    /*func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 66.0
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    }*/
+    /*func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 66))
         view.backgroundColor = #colorLiteral(red: 0.9380011602, green: 0.9380011602, blue: 0.9380011602, alpha: 1)
         let label = UILabel(frame: CGRect(x: 48, y: 20, width: tableView.frame.width, height: 20))
@@ -65,7 +66,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
             label.text = "Past"            
         }
         return view
-    }
+    }*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == ControllersSegue.editTicket.rawValue){
             
