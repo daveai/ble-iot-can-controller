@@ -37,6 +37,7 @@
 		3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABA92031F860D0D00E5E0D3 /* LaunchScreen.storyboard */; };
 		3ABA92101F860D0E00E5E0D3 /* CementechThunderboltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA920F1F860D0E00E5E0D3 /* CementechThunderboltTests.swift */; };
 		3ABA921B1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */; };
+		3ADDD0E21F99D0A000DA1CC2 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */; };
 		3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0A1F94C46400594BC8 /* AddNote.xib */; };
 		3ADEDC0D1F94C7BF00594BC8 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */; };
 		3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */; };
@@ -129,6 +130,7 @@
 		3ABA92161F860D0E00E5E0D3 /* CementechThunderboltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CementechThunderboltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABA921A1F860D0E00E5E0D3 /* CementechThunderboltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CementechThunderboltUITests.swift; sourceTree = "<group>"; };
 		3ABA921C1F860D0E00E5E0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orders.storyboard; sourceTree = "<group>"; };
 		3ADEDC0A1F94C46400594BC8 /* AddNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNote.xib; sourceTree = "<group>"; };
 		3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		3A09CC0E1F8631500093F9E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3ADDD0E01F99D06E00DA1CC2 /* Orders */,
 				3AE2223B1F94F2A20013A2B8 /* Modes */,
 				3AE0A2AD1F8B5AAD0008F496 /* Ticket */,
 				3A64F3C21F87965A00EB53A2 /* Pilots */,
@@ -385,6 +388,14 @@
 				3ABA921C1F860D0E00E5E0D3 /* Info.plist */,
 			);
 			path = CementechThunderboltUITests;
+			sourceTree = "<group>";
+		};
+		3ADDD0E01F99D06E00DA1CC2 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				3ADDD0E11F99D0A000DA1CC2 /* Orders.storyboard */,
+			);
+			path = Orders;
 			sourceTree = "<group>";
 		};
 		3AE0A2AD1F8B5AAD0008F496 /* Ticket */ = {
@@ -613,6 +624,7 @@
 				3AEB88411F87710400D56593 /* LeftMenuCell.xib in Resources */,
 				3AE222401F94FDB70013A2B8 /* Modes.storyboard in Resources */,
 				3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */,
+				3ADDD0E21F99D0A000DA1CC2 /* Orders.storyboard in Resources */,
 				3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */,
 				3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */,
 				3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */,

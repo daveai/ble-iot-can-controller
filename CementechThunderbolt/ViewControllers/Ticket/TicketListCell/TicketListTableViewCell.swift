@@ -10,9 +10,12 @@ import UIKit
 
 class TicketListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var container: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
