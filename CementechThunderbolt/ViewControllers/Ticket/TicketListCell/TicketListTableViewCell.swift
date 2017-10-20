@@ -12,6 +12,14 @@ class TicketListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var container: UIView!
+    
+    @IBOutlet weak var customerName: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var jobID: UILabel!
+    @IBOutlet weak var mixDesign: UILabel!
+    @IBOutlet weak var yards: UILabel!
+    @IBOutlet weak var timeRequested: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
