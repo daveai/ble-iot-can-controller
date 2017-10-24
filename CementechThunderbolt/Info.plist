@@ -24,6 +24,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Cementech Thunderbolt needs permission to access your camera</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Cementech Thunderbolt needs permission to access your current location</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

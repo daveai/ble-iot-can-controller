@@ -15,11 +15,14 @@
 		3A1A0EE71F8FC1E30092A988 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */; };
 		3A460ADC1F8CAEEF00E92984 /* ListTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */; };
 		3A460ADF1F8CAFAA00E92984 /* TicketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */; };
+		3A5A63EC1F9F21F600C32FD8 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */; };
 		3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A64F3C31F87968200EB53A2 /* Pilots.storyboard */; };
 		3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */; };
 		3A64F3C91F87981800EB53A2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */; };
 		3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */; };
 		3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */; };
+		3A81D94F1F9F306300A049CC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81D94E1F9F306300A049CC /* NavigationViewController.swift */; };
+		3A81D9511F9F308600A049CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A81D9501F9F308600A049CC /* CoreLocation.framework */; };
 		3A87E2AD1F8D0EAB0099B232 /* LayerUIExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A87E2AB1F8D0EAB0099B232 /* LayerUIExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A87E2B01F8D0EAB0099B232 /* LayerUIExtention.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A87E2A91F8D0EAA0099B232 /* LayerUIExtention.framework */; };
 		3A87E2B11F8D0EAB0099B232 /* LayerUIExtention.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A87E2A91F8D0EAA0099B232 /* LayerUIExtention.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -102,11 +105,14 @@
 		3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTicketsViewController.swift; sourceTree = "<group>"; };
 		3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListTableViewCell.swift; sourceTree = "<group>"; };
+		3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
 		3A64F3C31F87968200EB53A2 /* Pilots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pilots.storyboard; sourceTree = "<group>"; };
 		3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
+		3A81D94E1F9F306300A049CC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3A81D9501F9F308600A049CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3A87E2A91F8D0EAA0099B232 /* LayerUIExtention.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayerUIExtention.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A87E2AB1F8D0EAB0099B232 /* LayerUIExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerUIExtention.h; sourceTree = "<group>"; };
 		3A87E2AC1F8D0EAB0099B232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A81D9511F9F308600A049CC /* CoreLocation.framework in Frameworks */,
 				3A09CC131F8652540093F9E4 /* QuartzCore.framework in Frameworks */,
 				3A87E2B01F8D0EAB0099B232 /* LayerUIExtention.framework in Frameworks */,
 				9EF35F6F7B0153D46B3BE22A /* Pods_CementechThunderbolt.framework in Frameworks */,
@@ -195,6 +202,7 @@
 		3A09CC0D1F86312A0093F9E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A81D94D1F9F304400A049CC /* Navigation */,
 				3AE222411F9501110013A2B8 /* Modes */,
 				3A6F0FDD1F8BB4EC005AD863 /* Ticket */,
 				3A64F3C51F8796BD00EB53A2 /* Pilots */,
@@ -240,6 +248,7 @@
 		3A09CC111F8652540093F9E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A81D9501F9F308600A049CC /* CoreLocation.framework */,
 				3A09CC121F8652540093F9E4 /* QuartzCore.framework */,
 				CE9376A3ACEFE4F01A52906A /* Pods_CementechThunderbolt.framework */,
 				777E79054BB307D051E54E9E /* Pods_CementechThunderboltTests.framework */,
@@ -316,6 +325,14 @@
 			path = Ticket;
 			sourceTree = "<group>";
 		};
+		3A81D94D1F9F304400A049CC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3A81D94E1F9F306300A049CC /* NavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		3A87E2AA1F8D0EAB0099B232 /* LayerUIExtention */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +341,7 @@
 				3A87E2B61F8D0ECB0099B232 /* CustomUIView.swift */,
 				3A87E2B81F8D0EED0099B232 /* CustomUITextField.swift */,
 				3A87E2BA1F8D10540099B232 /* CustomUIButton.swift */,
+				3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */,
 			);
 			path = LayerUIExtention;
 			sourceTree = "<group>";
@@ -810,6 +828,7 @@
 			files = (
 				3A87E2BB1F8D10540099B232 /* CustomUIButton.swift in Sources */,
 				3AAB73831F8F587E001099C0 /* CustomUITextField.swift in Sources */,
+				3A5A63EC1F9F21F600C32FD8 /* CustomUIImageView.swift in Sources */,
 				3A87E2B71F8D0ECB0099B232 /* CustomUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,6 +849,7 @@
 				3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */,
 				3A460ADC1F8CAEEF00E92984 /* ListTicketsViewController.swift in Sources */,
 				3A1A0EE71F8FC1E30092A988 /* Dynamic.swift in Sources */,
+				3A81D94F1F9F306300A049CC /* NavigationViewController.swift in Sources */,
 				3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */,
 				3AAB73821F8F5672001099C0 /* TicketModel.swift in Sources */,
 				3ABA92001F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld in Sources */,
