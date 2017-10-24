@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import PKHUD
 class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocationCoordinate2D?
@@ -17,11 +18,8 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.requestWhenInUseAuthorization()
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
+        HUD.show(HUDContentType.labeledProgress(title: "", subtitle: "Fetching your current location"))
+        locationManager.delegate = self
         self.mapView.delegate = self
         
     }
@@ -37,6 +35,36 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         currentLocation = locValue
         locationManager.stopUpdatingLocation()
         openMapForPlace()
+        HUD.hide({ isHidden in
+            HUD.flash(.labeledSuccess(title: "Success", subtitle: "Location successfully fetched"), delay:2)
+            
+        })
+    }
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        print(status.rawValue)
+        if status.rawValue == 2 {
+            HUD.hide({ isHidden in
+                HUD.flash(.labeledError(title: "Error", subtitle: "Your location could not be fetched. Navigation will not work at this moment"), delay:3)
+                let alert = UIAlertController(title: "Location Permission", message: "You have opted out to share your current location. Do you reconsider to allow it ?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("No", comment: "Default action no"), style: .`default`, handler: { _ in
+                    HUD.flash(.labeledError(title: "Error", subtitle: "Your location could not be fetched. Navigation will not work at this moment"), delay:3)
+                }))
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Yes", comment: "Default action yes"), style: .`default`, handler: { _ in
+                    if let url = URL(string: "App-Prefs:root=Privacy&path=LOCATION") {
+                        // If general location settings are disabled then open general location settings
+                        UIApplication.shared.open(url, options: [:], completionHandler: { (isOpened) in
+                            print("Settings opened")
+                        })
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+            })
+        } else {
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                locationManager.startUpdatingLocation()
+            }
+        }
     }
     func openMapForPlace() {
         let center = CLLocationCoordinate2D(latitude: (currentLocation?.latitude)!, longitude: (currentLocation?.longitude)!)

@@ -6,6 +6,7 @@ target 'CementechThunderbolt' do
   use_frameworks!
   # Pods for CementechThunderbolt
   pod 'Bond'
+  pod 'PKHUD', '~> 5.0'
   target 'CementechThunderboltTests' do
     inherit! :search_paths
     # Pods for testing

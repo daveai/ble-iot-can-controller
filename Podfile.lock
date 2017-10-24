@@ -3,16 +3,19 @@ PODS:
     - Differ (~> 1.0.0)
     - ReactiveKit (~> 3.7.0)
   - Differ (1.0.0)
+  - PKHUD (5.0.0)
   - ReactiveKit (3.7.1)
 
 DEPENDENCIES:
   - Bond
+  - PKHUD (~> 5.0)
 
 SPEC CHECKSUMS:
   Bond: 8a94aab1e599a74603c31693c50ad4fb24e2b85f
   Differ: ac8137d4099659e06f3de6aa26d2c6416d986946
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
   ReactiveKit: e9c4a610e853fdf57779e3bb2d7b3033733b87fa
 
-PODFILE CHECKSUM: e5adfdf0c0a5d83a3adf8481e4dfc456712beef6
+PODFILE CHECKSUM: ddefb2cc6d817fdc28898a3024d311962a7e01ee
 
 COCOAPODS: 1.3.1

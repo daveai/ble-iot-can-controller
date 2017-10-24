@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Edit Ticket-->
+        <!--Job #100025-->
         <scene sceneID="YlK-Pl-Qv1">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="vg2-KS-Ud7" customClass="EditTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
@@ -551,13 +552,13 @@
                                                 <state key="normal" image="notebutton"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4L-Hb-yvR">
-                                                <rect key="frame" x="36" y="975" width="97" height="20"/>
+                                                <rect key="frame" x="36" y="975" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attached three images — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zie-YC-jDj">
-                                                <rect key="frame" x="141" y="975" width="268" height="20"/>
+                                                <rect key="frame" x="149" y="975" width="286.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -630,13 +631,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYi-4l-NjO">
-                                                <rect key="frame" x="36" y="1221" width="97" height="20"/>
+                                                <rect key="frame" x="36" y="1221" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a customer signature — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f9-Kl-3D8">
-                                                <rect key="frame" x="141" y="1221" width="307.5" height="20"/>
+                                                <rect key="frame" x="149" y="1221" width="330.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -787,8 +788,11 @@
                             <constraint firstItem="bsY-Xt-c08" firstAttribute="bottom" secondItem="0Nm-37-DjX" secondAttribute="top" id="i9P-1j-Qnw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Ticket" id="Ecl-fI-dst">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="LRJ-OG-b8x"/>
+                    <navigationItem key="navigationItem" title="Job #100025" id="Ecl-fI-dst">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Update" id="LRJ-OG-b8x"/>
+                            <barButtonItem title="Revert" id="4qy-Rl-XwM"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="addNotePopup" destination="oQe-mQ-Smj" id="U8K-wx-GHL"/>
@@ -865,7 +869,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ev-nP-gE7" customClass="CustomUIView" customModule="LayerUIExtention">
-                                <rect key="frame" x="10" y="79" width="400" height="70"/>
+                                <rect key="frame" x="10" y="99" width="400" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-dP-lfJ" customClass="CustomUIButton" customModule="LayerUIExtention">
                                         <rect key="frame" x="0.0" y="0.0" width="133.5" height="70"/>
@@ -946,7 +950,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jSc-d0-iUj">
-                                <rect key="frame" x="0.0" y="157" width="1024" height="611"/>
+                                <rect key="frame" x="0.0" y="177" width="1024" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -1173,11 +1177,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Orders" id="J1g-iv-0eP">
                         <barButtonItem key="backBarButtonItem" title="Orders" id="Gkh-b6-zsc"/>
-                        <barButtonItem key="rightBarButtonItem" title="Create New" id="Vey-hY-VWN">
-                            <connections>
-                                <segue destination="Wge-q2-rA1" kind="show" identifier="toCreateTicket" id="ISy-Tz-P9Q"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Create New" id="Vey-hY-VWN">
+                                <connections>
+                                    <segue destination="Wge-q2-rA1" kind="show" identifier="toCreateTicket" id="ISy-Tz-P9Q"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="iU1-Rz-woU"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="btnCurrent" destination="eJj-dP-lfJ" id="MFY-F7-815"/>
@@ -1189,7 +1196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPF-Rc-PIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="W0U-2b-LaM" customClass="AddNote" customModule="CementechThunderbolt" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="298" height="321"/>
+                    <rect key="frame" x="0.0" y="0.0" width="478" height="247"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
@@ -1209,7 +1216,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-EW-E2F">
-                                <rect key="frame" x="0.0" y="84" width="1024" height="684"/>
+                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bH-Kj-hNo">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1041"/>
