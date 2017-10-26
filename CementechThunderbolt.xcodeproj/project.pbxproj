@@ -53,6 +53,10 @@
 		3AEB883F1F87641500D56593 /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB883E1F87641500D56593 /* LeftMenuView.swift */; };
 		3AEB88411F87710400D56593 /* LeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB88401F87710400D56593 /* LeftMenuCell.xib */; };
 		3AEB88431F87720100D56593 /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB88421F87720100D56593 /* LeftMenuTableViewCell.swift */; };
+		3AF345081FA1E08D0029842B /* PTSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 3A09CC181F8656310093F9E4 /* PTSans.ttc */; };
+		3AF3450A1FA1F5270029842B /* ImageFrame.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF345091FA1F5270029842B /* ImageFrame.xib */; };
+		3AF3450C1FA1F6540029842B /* ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3450B1FA1F6540029842B /* ImageFrame.swift */; };
+		3AF3450F1FA213600029842B /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3450E1FA213600029842B /* Support.storyboard */; };
 		3AF7BDA81F8E592C0063BEB1 /* EditTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BDA71F8E592C0063BEB1 /* EditTicketViewController.swift */; };
 		9EF35F6F7B0153D46B3BE22A /* Pods_CementechThunderbolt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9376A3ACEFE4F01A52906A /* Pods_CementechThunderbolt.framework */; };
 		EC7F4DB2462F03B01416C2D5 /* Pods_CementechThunderboltTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E79054BB307D051E54E9E /* Pods_CementechThunderboltTests.framework */; };
@@ -149,6 +153,9 @@
 		3AEB883E1F87641500D56593 /* LeftMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuView.swift; sourceTree = "<group>"; };
 		3AEB88401F87710400D56593 /* LeftMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuCell.xib; sourceTree = "<group>"; };
 		3AEB88421F87720100D56593 /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		3AF345091FA1F5270029842B /* ImageFrame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFrame.xib; sourceTree = "<group>"; };
+		3AF3450B1FA1F6540029842B /* ImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
+		3AF3450E1FA213600029842B /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		3AF7BDA71F8E592C0063BEB1 /* EditTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketViewController.swift; sourceTree = "<group>"; };
 		4329BD1D0818D1BBE38A3399 /* Pods-CementechThunderboltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CementechThunderboltTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CementechThunderboltTests/Pods-CementechThunderboltTests.debug.xcconfig"; sourceTree = "<group>"; };
 		56F0B92C68EC0269CF5BEE4F /* Pods-CementechThunderboltUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CementechThunderboltUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CementechThunderboltUITests/Pods-CementechThunderboltUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +223,7 @@
 		3A09CC0E1F8631500093F9E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3AF3450D1FA2133B0029842B /* Support */,
 				3ADDD0E01F99D06E00DA1CC2 /* Orders */,
 				3AE2223B1F94F2A20013A2B8 /* Modes */,
 				3AE0A2AD1F8B5AAD0008F496 /* Ticket */,
@@ -447,6 +455,7 @@
 				3AEB88401F87710400D56593 /* LeftMenuCell.xib */,
 				3A1858BC1F90BCCE00F4AA6C /* SignaturePopup.xib */,
 				3ADEDC0A1F94C46400594BC8 /* AddNote.xib */,
+				3AF345091FA1F5270029842B /* ImageFrame.xib */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -458,8 +467,17 @@
 				3AEB88421F87720100D56593 /* LeftMenuTableViewCell.swift */,
 				3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */,
 				3ADEDC0C1F94C7BF00594BC8 /* AddNote.swift */,
+				3AF3450B1FA1F6540029842B /* ImageFrame.swift */,
 			);
 			path = Fragments;
+			sourceTree = "<group>";
+		};
+		3AF3450D1FA2133B0029842B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3AF3450E1FA213600029842B /* Support.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		436C5656B640F8F653CE6D9F /* Pods */ = {
@@ -635,10 +653,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF345081FA1E08D0029842B /* PTSans.ttc in Resources */,
+				3AF3450A1FA1F5270029842B /* ImageFrame.xib in Resources */,
 				3AE222511F950C380013A2B8 /* www in Resources */,
 				3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */,
 				3ABA92021F860D0D00E5E0D3 /* Assets.xcassets in Resources */,
 				3AEB883C1F875DEC00D56593 /* LeftMenuView.xib in Resources */,
+				3AF3450F1FA213600029842B /* Support.storyboard in Resources */,
 				3AEB88411F87710400D56593 /* LeftMenuCell.xib in Resources */,
 				3AE222401F94FDB70013A2B8 /* Modes.storyboard in Resources */,
 				3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */,
@@ -854,6 +875,7 @@
 				3A81D94F1F9F306300A049CC /* NavigationViewController.swift in Sources */,
 				3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */,
 				3AAB73821F8F5672001099C0 /* TicketModel.swift in Sources */,
+				3AF3450C1FA1F6540029842B /* ImageFrame.swift in Sources */,
 				3ABA92001F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld in Sources */,
 				3A8F885F1F909F5100297FBF /* CreateTicketViewModel.swift in Sources */,
 				3AEB883F1F87641500D56593 /* LeftMenuView.swift in Sources */,

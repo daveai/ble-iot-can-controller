@@ -18,8 +18,7 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
     @IBOutlet weak var locationName: CustomUITextField!
     @IBOutlet weak var address: CustomUITextField!
     @IBOutlet var signaturePopup: SignaturePopup!
-    @IBOutlet weak var btnSignature: CustomUIButton!
-    
+    @IBOutlet weak var btnSignature: CustomUIButton!    
     @IBOutlet var addNotePopup: AddNote!
     @IBOutlet weak var estimatedCubicYardage: CustomUITextField!
     @IBOutlet weak var costPerCubicYardage: CustomUITextField!
@@ -97,10 +96,6 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
                 self.additionalCost.textColor = .red
             }
         }
-        /*viewModel.estimatedCubicYardage.bidirectionalBind(to:estimatedCubicYardage.reactive.text)
-        viewModel.costPerCubicYardage.bidirectionalBind(to:costPerCubicYardage.reactive.text)
-        viewModel.additionalCost.bidirectionalBind(to:additionalCost.reactive.text)
-        viewModel.totalCost.bidirectionalBind(to: totalPrice.reactive.text)*/
     }
     
     func didNoteAdded(note: String) {

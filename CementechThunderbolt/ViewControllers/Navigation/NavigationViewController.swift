@@ -21,14 +21,11 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         HUD.show(HUDContentType.labeledProgress(title: "", subtitle: "Fetching your current location"))
         locationManager.delegate = self
         self.mapView.delegate = self
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
@@ -37,7 +34,6 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         openMapForPlace()
         HUD.hide({ isHidden in
             HUD.flash(.labeledSuccess(title: "Success", subtitle: "Location successfully fetched"), delay:2)
-            
         })
     }
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -70,49 +66,37 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         let center = CLLocationCoordinate2D(latitude: (currentLocation?.latitude)!, longitude: (currentLocation?.longitude)!)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.mapView.setRegion(region, animated: true)
-        
         let newPin = MKPointAnnotation()
         newPin.coordinate = currentLocation!
         newPin.title = "My Current Location"
         self.mapView.addAnnotation(newPin)
-        
         let destinationLocation = CLLocationCoordinate2D(latitude: 37.771978, longitude: -122.423385)
         let destinationAnnotation = MKPointAnnotation()
         destinationAnnotation.title = "My Destination"
         destinationAnnotation.coordinate = destinationLocation
         self.mapView.addAnnotation(destinationAnnotation)
-        
-        
         let sourcePlacemark = MKPlacemark(coordinate: currentLocation!, addressDictionary: nil)
         let destinationPlacemark = MKPlacemark(coordinate: destinationLocation, addressDictionary: nil)
-        
-        
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
         let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
-        
         let directionRequest = MKDirectionsRequest()
         directionRequest.source = sourceMapItem
         directionRequest.destination = destinationMapItem
         directionRequest.transportType = .automobile
-        
         let directions = MKDirections(request: directionRequest)
-        
         directions.calculate {
             (response, error) -> Void in
-            
             guard let response = response else {
                 if let error = error {
                     print("Error: \(error)")
                 }
-                
                 return
             }
             let route = response.routes[0]
             self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
             //let rect = route.polyline.boundingMapRect
             //self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
-        }  
-        
+        }
     }
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
