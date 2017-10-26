@@ -27,6 +27,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         "job_id":"123500",
         "mix_design": "$ 1700",
         "yards":"20",
+        "status":"current",
         "is_critical":true,
         "time_requested":"15 Nov 2017"],
         ["name":"Ernest Williamson",
@@ -34,6 +35,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
          "job_id":"123600",
          "mix_design": "$ 2950",
          "yards":"40",
+         "status":"current",
          "is_critical":false,
          "time_requested":"15 Nov 2017"]
         
@@ -72,6 +74,11 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         } else {
             cell.btnCritical.isHidden = true
         }
+        if((currentTicket[indexPath.row]["status"] as! String) == "current"){
+            cell.btnSend.isHidden = false
+        } else {
+            cell.btnSend.isHidden = true
+        }
         cell.delegate = self
         return cell
     }
@@ -109,6 +116,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123500",
              "mix_design": "$ 1700",
              "yards":"20",
+             "status":"current",
              "is_critical":true,
              "time_requested":"15 Nov 2017"],
             ["name":"Ernest Williamson",
@@ -116,6 +124,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123600",
              "mix_design": "$ 2950",
              "yards":"40",
+             "status":"current",
              "is_critical":false,
              "time_requested":"15 Nov 2017"]
             
@@ -132,6 +141,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123300",
              "mix_design": "$ 3000",
              "yards":"10",
+             "status":"upcoming",
              "is_critical":false,
              "time_requested":"15 DEC 2017"],
             ["name":"Ethan Carter",
@@ -139,6 +149,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123100",
              "mix_design": "$ 7850",
              "yards":"100",
+             "status":"upcoming",
              "is_critical":false,
              "time_requested":"18 DEC 2017"]
             
@@ -155,6 +166,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123300",
              "mix_design": "$ 5200",
              "yards":"20",
+             "status":"past",
              "is_critical":false,
              "time_requested":"15 Nov 2016"],
             ["name":"Kane Richardson",
@@ -162,6 +174,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "job_id":"123400",
              "mix_design": "$ 4598",
              "yards":"50",
+             "status":"past",
              "is_critical":false,
              "time_requested":"18 Nov 2016"]
             

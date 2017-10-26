@@ -1144,7 +1144,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1647" y="984"/>
+            <point key="canvasLocation" x="1085" y="984"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="FS3-uS-M8g">
@@ -1471,6 +1471,7 @@
                                         <connections>
                                             <outlet property="address" destination="WDs-9N-Ec6" id="gAr-6f-x8e"/>
                                             <outlet property="btnCritical" destination="fUZ-LO-Kcq" id="S4e-UU-wDP"/>
+                                            <outlet property="btnSend" destination="6lT-bJ-Dem" id="1BY-N6-lFO"/>
                                             <outlet property="container" destination="qFW-Ao-dsf" id="bZv-MZ-arM"/>
                                             <outlet property="customerName" destination="8M4-Qn-44a" id="qBH-XD-icN"/>
                                             <outlet property="jobID" destination="1tQ-zE-Sg8" id="ifz-9z-zJQ"/>
@@ -3319,7 +3320,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="359" y="1974"/>
+            <point key="canvasLocation" x="359" y="2138"/>
         </scene>
     </scenes>
     <resources>

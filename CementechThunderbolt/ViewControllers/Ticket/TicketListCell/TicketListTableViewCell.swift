@@ -21,6 +21,7 @@ class TicketListTableViewCell: UITableViewCell {
     @IBOutlet weak var yards: UILabel!
     @IBOutlet weak var timeRequested: UILabel!
     @IBOutlet weak var btnCritical: UIButton!
+    @IBOutlet weak var btnSend: UIButton!
     var delegate:TicketListTableViewCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
