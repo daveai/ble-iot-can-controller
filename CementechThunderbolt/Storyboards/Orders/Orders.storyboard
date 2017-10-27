@@ -322,7 +322,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-rD-c9t">
-                                                        <rect key="frame" x="15" y="37" width="53" height="21"/>
+                                                        <rect key="frame" x="15" y="37" width="58" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="mlL-4A-Hx4"/>
                                                         </constraints>
@@ -331,7 +331,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYQ-Hf-lQj">
-                                                        <rect key="frame" x="157" y="37" width="53.5" height="21"/>
+                                                        <rect key="frame" x="168.5" y="37" width="58.5" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="3kz-Yi-7Ga"/>
                                                         </constraints>
@@ -340,13 +340,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 OCT 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td6-tN-iZV">
-                                                        <rect key="frame" x="72" y="39" width="77" height="16.5"/>
+                                                        <rect key="frame" x="77" y="39" width="83.5" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 OCT 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqp-g5-yAw">
-                                                        <rect key="frame" x="216" y="39" width="78" height="17"/>
+                                                        <rect key="frame" x="232.5" y="39" width="83.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -438,7 +438,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbz-6X-Ui3">
-                                                        <rect key="frame" x="167" y="37" width="57" height="21"/>
+                                                        <rect key="frame" x="173.5" y="37" width="57" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="lcB-Fk-Orm"/>
                                                             <constraint firstAttribute="width" constant="57" id="ssg-G6-iWc"/>
@@ -448,13 +448,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 OCT 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTE-5p-FCz">
-                                                        <rect key="frame" x="82" y="39" width="77" height="16.5"/>
+                                                        <rect key="frame" x="82" y="39" width="83.5" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 OCT 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-76-RKa">
-                                                        <rect key="frame" x="226" y="39" width="78" height="17"/>
+                                                        <rect key="frame" x="232.5" y="39" width="83.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1006,13 +1006,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7b-6z-vPS">
-                                                <rect key="frame" x="15" y="694" width="97" height="20"/>
+                                                <rect key="frame" x="15" y="694" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attached three images — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-2M-sdv">
-                                                <rect key="frame" x="120" y="694" width="268" height="20"/>
+                                                <rect key="frame" x="128" y="694" width="286.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1078,13 +1078,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maks Dovgan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEc-73-zcD">
-                                                <rect key="frame" x="15" y="939" width="97" height="20"/>
+                                                <rect key="frame" x="15" y="939" width="105" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="added a customer signature — 5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9n-PW-vAE">
-                                                <rect key="frame" x="120" y="939" width="307.5" height="20"/>
+                                                <rect key="frame" x="128" y="939" width="330.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1210,7 +1210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMV-zr-LwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.5859375" y="-769.53125"/>
+            <point key="canvasLocation" x="1039" y="-73"/>
         </scene>
         <!--Orders-->
         <scene sceneID="hN8-ga-wrJ">
@@ -3380,7 +3380,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="359" y="2138"/>
+            <point key="canvasLocation" x="359" y="1709"/>
         </scene>
     </scenes>
     <resources>

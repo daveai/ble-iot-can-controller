@@ -13,6 +13,7 @@ struct StoryBoard {
 }
 protocol MenuItemDelegate {
     func didSelectMenu(menu:StoryBoard)
+    func didLogout()
 }
 class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
     var delegate:MenuItemDelegate?
@@ -99,4 +100,7 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
         delegate?.didSelectMenu(menu: menuItems[indexPath.row])
     }
     
+    @IBAction func actionLogout(_ sender: Any) {
+        delegate?.didLogout()
+    }
 }

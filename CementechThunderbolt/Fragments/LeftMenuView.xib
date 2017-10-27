@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,13 +78,17 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_out_button" translatesAutoresizingMaskIntoConstraints="NO" id="1l3-GO-zd0">
-                                    <rect key="frame" x="61.5" y="120" width="25" height="25"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGl-Iv-Qyd">
+                                    <rect key="frame" x="62" y="108" width="25" height="25"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="25" id="Pbz-LG-dxx"/>
-                                        <constraint firstAttribute="height" constant="25" id="s5W-2B-Gcg"/>
+                                        <constraint firstAttribute="height" constant="25" id="FHt-nI-G5G"/>
+                                        <constraint firstAttribute="width" constant="25" id="GM3-9U-mj6"/>
                                     </constraints>
-                                </imageView>
+                                    <state key="normal" backgroundImage="log_out_button"/>
+                                    <connections>
+                                        <action selector="actionLogout:" destination="-1" eventType="touchUpInside" id="Fwx-uN-ttx"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -92,10 +96,10 @@
                                 <constraint firstItem="wa0-2S-H06" firstAttribute="centerX" secondItem="lXF-li-VTL" secondAttribute="centerX" id="1A8-e6-9Rc"/>
                                 <constraint firstAttribute="height" constant="180" id="2Zh-bo-fhK"/>
                                 <constraint firstItem="Ng7-CF-PQh" firstAttribute="leading" secondItem="lXF-li-VTL" secondAttribute="leading" id="ACC-Uf-kAH"/>
+                                <constraint firstItem="eGl-Iv-Qyd" firstAttribute="centerX" secondItem="lXF-li-VTL" secondAttribute="centerX" id="Igk-xJ-TYY"/>
                                 <constraint firstAttribute="trailing" secondItem="Ng7-CF-PQh" secondAttribute="trailing" id="MZ5-El-BUN"/>
-                                <constraint firstItem="1l3-GO-zd0" firstAttribute="centerX" secondItem="lXF-li-VTL" secondAttribute="centerX" id="RG7-q9-d2J"/>
                                 <constraint firstItem="wa0-2S-H06" firstAttribute="top" secondItem="lXF-li-VTL" secondAttribute="top" constant="25" id="U17-ox-0P3"/>
-                                <constraint firstItem="1l3-GO-zd0" firstAttribute="top" secondItem="Ng7-CF-PQh" secondAttribute="bottom" constant="20" id="wRo-FO-Qcl"/>
+                                <constraint firstItem="eGl-Iv-Qyd" firstAttribute="top" secondItem="Ng7-CF-PQh" secondAttribute="bottom" constant="8" id="rrH-B2-nkF"/>
                             </constraints>
                         </view>
                     </subviews>

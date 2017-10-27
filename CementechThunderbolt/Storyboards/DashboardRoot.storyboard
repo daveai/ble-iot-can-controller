@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,11 +45,20 @@
                     <connections>
                         <outlet property="container" destination="qGS-Jo-Kpa" id="fdX-bj-YxE"/>
                         <outlet property="leftMenuView" destination="WIK-SW-YgU" id="v94-Qt-6Nt"/>
+                        <segue destination="xe0-ao-FaT" kind="showDetail" identifier="toLogin" animates="NO" action="showViewController:sender:" id="3kT-5I-udX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCo-km-B1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5065.4296875" y="-841.40625"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="WiR-a2-xi9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="xe0-ao-FaT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fg8-ZH-RO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4629" y="-841"/>
         </scene>
     </scenes>
 </document>
