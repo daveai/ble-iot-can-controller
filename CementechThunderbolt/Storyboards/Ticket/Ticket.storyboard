@@ -23,7 +23,7 @@
         <!--New Ticket-->
         <scene sceneID="Ttk-Hr-7a0">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QoL-1M-o0G" customClass="CreateTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QoL-1M-o0G" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zMa-Yz-6M8"/>
                         <viewControllerLayoutGuide type="bottom" id="KmN-JO-Mav"/>
@@ -724,7 +724,7 @@
         <!--Tickets-->
         <scene sceneID="mdK-HY-ep7">
             <objects>
-                <viewController id="tKF-Uu-4QB" customClass="ListTicketsViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tKF-Uu-4QB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3hT-f8-HIM"/>
                         <viewControllerLayoutGuide type="bottom" id="UHL-ZA-qIA"/>
@@ -991,7 +991,7 @@
         <!--Edit Ticket-->
         <scene sceneID="BKL-Jo-ECa">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="arc-kp-lea" customClass="EditTicketViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="arc-kp-lea" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UPB-lx-RQe"/>
                         <viewControllerLayoutGuide type="bottom" id="mdI-qa-QrF"/>

@@ -9,7 +9,7 @@
 import UIKit
 import LayerUIExtention
 import Bond
-class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNotePopupDelegete {
+class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNotePopupDelegete, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var viewModel:EditTicketViewModel = EditTicketViewModel()
     @IBOutlet weak var scrollView: UIScrollView!
@@ -18,14 +18,12 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
     @IBOutlet weak var locationName: CustomUITextField!
     @IBOutlet weak var address: CustomUITextField!
     @IBOutlet var signaturePopup: SignaturePopup!
-    @IBOutlet weak var btnSignature: CustomUIButton!
-    
+    @IBOutlet weak var btnSignature: CustomUIButton!    
     @IBOutlet var addNotePopup: AddNote!
     @IBOutlet weak var estimatedCubicYardage: CustomUITextField!
     @IBOutlet weak var costPerCubicYardage: CustomUITextField!
     @IBOutlet weak var additionalCost: CustomUITextField!
-    @IBOutlet weak var totalPrice: CustomUITextField!
-    
+    @IBOutlet weak var totalPrice: CustomUITextField!    
     override func viewDidLoad() {
         super.viewDidLoad()
         signaturePopup.delegate = self;
@@ -97,10 +95,6 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
                 self.additionalCost.textColor = .red
             }
         }
-        /*viewModel.estimatedCubicYardage.bidirectionalBind(to:estimatedCubicYardage.reactive.text)
-        viewModel.costPerCubicYardage.bidirectionalBind(to:costPerCubicYardage.reactive.text)
-        viewModel.additionalCost.bidirectionalBind(to:additionalCost.reactive.text)
-        viewModel.totalCost.bidirectionalBind(to: totalPrice.reactive.text)*/
     }
     
     func didNoteAdded(note: String) {
@@ -110,6 +104,21 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
     
     func didAddNotePopupClose() {
         addNotePopup.removeFromSuperview()
+    }
+    @IBAction func btnUploadPicture(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
 }
 extension String  {

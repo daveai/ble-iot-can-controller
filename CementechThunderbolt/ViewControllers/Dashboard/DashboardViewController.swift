@@ -13,7 +13,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
         StoryBoard(storyBoardName: "Orders", display: "Orders"),
-        //StoryBoard(storyBoardName: "Modes", display: "Modes")
+        StoryBoard(storyBoardName: "Modes", display: "Modes"),
+        StoryBoard(storyBoardName: "Support", display: "Support")
     ];
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller
@@ -64,7 +65,8 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     }
     
     // MARK: - Menu Item Delegates
-    func didSelectMenu(menu: StoryBoard) {        
+    func didSelectMenu(menu: StoryBoard) {
+        print(menu.storyBoardName)
         print(self.childViewControllers)
         var isViewControllerPresent:Bool = false
         var selectedViewController:UIViewController = UIViewController()

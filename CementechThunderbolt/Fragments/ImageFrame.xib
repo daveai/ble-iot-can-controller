@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageFrame" customModule="CementechThunderbolt" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp" translatesAutoresizingMaskIntoConstraints="NO" id="dCx-0w-nXK">
+                    <rect key="frame" x="25" y="25" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Crw-H4-9yb"/>
+                        <constraint firstAttribute="height" constant="150" id="Ux3-1Z-STr"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="JtA-Nc-Ztz">
+                    <rect key="frame" x="71" y="84" width="58" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="4Lw-2I-HUu"/>
+                        <constraint firstAttribute="height" constant="32" id="dbS-oR-HvR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQl-jg-9KV" customClass="CustomUIButton" customModule="LayerUIExtention">
+                    <rect key="frame" x="154" y="14" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="3O4-Jh-1F8"/>
+                        <constraint firstAttribute="height" constant="30" id="qQl-9v-5Tw"/>
+                    </constraints>
+                    <state key="normal" title="X"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dCx-0w-nXK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6HK-IF-bCA"/>
+                <constraint firstItem="dCx-0w-nXK" firstAttribute="top" secondItem="oQl-jg-9KV" secondAttribute="bottom" constant="-19" id="HOV-Hb-Amo"/>
+                <constraint firstItem="JtA-Nc-Ztz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JXS-Ih-YFy"/>
+                <constraint firstItem="JtA-Nc-Ztz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eyP-28-tgb"/>
+                <constraint firstItem="dCx-0w-nXK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="t8D-hL-mrF"/>
+                <constraint firstItem="oQl-jg-9KV" firstAttribute="leading" secondItem="dCx-0w-nXK" secondAttribute="trailing" constant="-21" id="wZx-Nb-W6N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye" width="58" height="34"/>
+        <image name="temp" width="101" height="75"/>
+    </resources>
+</document>
