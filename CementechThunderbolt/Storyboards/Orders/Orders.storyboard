@@ -459,13 +459,6 @@
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7du-gt-dXk">
-                                                        <rect key="frame" x="20" y="66" width="484" height="1"/>
-                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="1" id="5bk-de-Upu"/>
-                                                        </constraints>
-                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-aj-zOX">
                                                         <rect key="frame" x="25" y="75" width="137" height="36"/>
                                                         <constraints>
@@ -830,6 +823,13 @@
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7du-gt-dXk">
+                                                        <rect key="frame" x="20" y="66" width="484" height="1"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="5bk-de-Upu"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lr8-aS-e0z" customClass="CustomUIView" customModule="LayerUIExtention">
                                                         <rect key="frame" x="219" y="540" width="278" height="36"/>
                                                         <subviews>
@@ -1277,7 +1277,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feV-Nc-RgW" customClass="CustomUIButton" customModule="LayerUIExtention">
-                                        <rect key="frame" x="216" y="7" width="20" height="20"/>
+                                        <rect key="frame" x="214" y="10" width="20" height="20"/>
                                         <color key="backgroundColor" red="0.79607843140000001" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="dBO-Kv-Ta8"/>
@@ -1306,8 +1306,8 @@
                                     <constraint firstAttribute="height" constant="70" id="DcC-ax-hBv"/>
                                     <constraint firstAttribute="trailing" secondItem="4tD-fI-ZfC" secondAttribute="trailing" id="GHa-kh-YLb"/>
                                     <constraint firstAttribute="bottom" secondItem="eJj-dP-lfJ" secondAttribute="bottom" id="NIQ-si-9JE"/>
-                                    <constraint firstItem="feV-Nc-RgW" firstAttribute="leading" secondItem="ldM-ft-LYA" secondAttribute="trailing" constant="-50" id="SeJ-xx-Ot3"/>
-                                    <constraint firstItem="feV-Nc-RgW" firstAttribute="top" secondItem="2Ev-nP-gE7" secondAttribute="top" constant="7" id="hyM-f5-jWT"/>
+                                    <constraint firstItem="feV-Nc-RgW" firstAttribute="leading" secondItem="ldM-ft-LYA" secondAttribute="trailing" constant="-52" id="SeJ-xx-Ot3"/>
+                                    <constraint firstItem="feV-Nc-RgW" firstAttribute="top" secondItem="2Ev-nP-gE7" secondAttribute="top" constant="10" id="hyM-f5-jWT"/>
                                     <constraint firstItem="4tD-fI-ZfC" firstAttribute="top" secondItem="2Ev-nP-gE7" secondAttribute="top" id="jLA-pB-Pgb"/>
                                     <constraint firstAttribute="bottom" secondItem="ldM-ft-LYA" secondAttribute="bottom" id="lsP-2P-l0q"/>
                                     <constraint firstItem="eJj-dP-lfJ" firstAttribute="leading" secondItem="2Ev-nP-gE7" secondAttribute="leading" id="qfB-OF-3wt"/>
