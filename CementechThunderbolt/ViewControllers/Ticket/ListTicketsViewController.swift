@@ -8,9 +8,8 @@
 
 import UIKit
 import LayerUIExtention
+import PKHUD
 class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TicketListTableViewCellDelegate, AddNotePopupDelegete {
-    
-    
     enum ControllersSegue: String {
         case editTicket = "toEditTicket"
         case createTicket = "toCreateTicket"
@@ -21,6 +20,9 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var btnUpcoming: CustomUIButton!
     @IBOutlet weak var btnCurrent: CustomUIButton!
     @IBOutlet var noteView: AddNote!
+    let overlay = UIView()
+    var timer = Timer()
+    var shouldAnimateRowBackgroundColorOnAdition = false;
     var currentTicket:[[String:Any]] = [
         ["name":"Maks Dovgan",
          "address":"50 Armstrong Turnpike",
@@ -37,7 +39,40 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
          "yards":"40",
          "status":"current",
          "is_critical":false,
+         "time_requested":"15 Nov 2017"],
+        ["name":"Ernest Williamson",
+         "address":"8791 Lindgren Course Apt. 878",
+         "job_id":"123600",
+         "mix_design": "$ 2950",
+         "yards":"40",
+         "status":"current",
+         "is_critical":false,
+         "time_requested":"15 Nov 2017"],
+        ["name":"Ernest Williamson",
+         "address":"8791 Lindgren Course Apt. 878",
+         "job_id":"123600",
+         "mix_design": "$ 2950",
+         "yards":"40",
+         "status":"current",
+         "is_critical":false,
+         "time_requested":"15 Nov 2017"],
+        ["name":"Ernest Williamson",
+         "address":"8791 Lindgren Course Apt. 878",
+         "job_id":"123600",
+         "mix_design": "$ 2950",
+         "yards":"40",
+         "status":"current",
+         "is_critical":false,
+         "time_requested":"15 Nov 2017"],
+        ["name":"Ernest Williamson",
+         "address":"8791 Lindgren Course Apt. 878",
+         "job_id":"123600",
+         "mix_design": "$ 2950",
+         "yards":"40",
+         "status":"current",
+         "is_critical":false,
          "time_requested":"15 Nov 2017"]
+        
         
     ]
     override func viewDidLoad() {
@@ -46,6 +81,8 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         ticketListTable.delaysContentTouches = true
         ticketListTable.canCancelContentTouches = true
         noteView.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,7 +94,6 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let identifier = "cell"
         var cell: TicketListTableViewCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? TicketListTableViewCell
         if cell == nil {
@@ -82,7 +118,6 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         cell.delegate = self
         return cell
     }
-    
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("hello")
@@ -110,6 +145,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         btnCurrent.setImage(UIImage(imageLiteralResourceName: "current_tab_active"), for: UIControlState.normal)
     }
     @IBAction func actionCurrent(_ sender: Any) {
+        timer.invalidate()
         currentTicket = [
             ["name":"Maks Dovgan",
              "address":"50 Armstrong Turnpike",
@@ -118,6 +154,38 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "yards":"20",
              "status":"current",
              "is_critical":true,
+             "time_requested":"15 Nov 2017"],
+            ["name":"Ernest Williamson",
+             "address":"8791 Lindgren Course Apt. 878",
+             "job_id":"123600",
+             "mix_design": "$ 2950",
+             "yards":"40",
+             "status":"current",
+             "is_critical":false,
+             "time_requested":"15 Nov 2017"],
+            ["name":"Ernest Williamson",
+             "address":"8791 Lindgren Course Apt. 878",
+             "job_id":"123600",
+             "mix_design": "$ 2950",
+             "yards":"40",
+             "status":"current",
+             "is_critical":false,
+             "time_requested":"15 Nov 2017"],
+            ["name":"Ernest Williamson",
+             "address":"8791 Lindgren Course Apt. 878",
+             "job_id":"123600",
+             "mix_design": "$ 2950",
+             "yards":"40",
+             "status":"current",
+             "is_critical":false,
+             "time_requested":"15 Nov 2017"],
+            ["name":"Ernest Williamson",
+             "address":"8791 Lindgren Course Apt. 878",
+             "job_id":"123600",
+             "mix_design": "$ 2950",
+             "yards":"40",
+             "status":"current",
+             "is_critical":false,
              "time_requested":"15 Nov 2017"],
             ["name":"Ernest Williamson",
              "address":"8791 Lindgren Course Apt. 878",
@@ -151,15 +219,66 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "yards":"100",
              "status":"upcoming",
              "is_critical":false,
+             "time_requested":"18 DEC 2017"],
+            ["name":"David Heath",
+             "address":"50 Newyork, NY",
+             "job_id":"123300",
+             "mix_design": "$ 3000",
+             "yards":"10",
+             "status":"upcoming",
+             "is_critical":false,
+             "time_requested":"15 DEC 2017"],
+            ["name":"Ethan Carter",
+             "address":"52 Mayami, FL",
+             "job_id":"123100",
+             "mix_design": "$ 7850",
+             "yards":"100",
+             "status":"upcoming",
+             "is_critical":false,
+             "time_requested":"18 DEC 2017"],
+            ["name":"David Heath",
+             "address":"50 Newyork, NY",
+             "job_id":"123300",
+             "mix_design": "$ 3000",
+             "yards":"10",
+             "status":"upcoming",
+             "is_critical":false,
+             "time_requested":"15 DEC 2017"],
+            ["name":"Ethan Carter",
+             "address":"52 Mayami, FL",
+             "job_id":"123100",
+             "mix_design": "$ 7850",
+             "yards":"100",
+             "status":"upcoming",
+             "is_critical":false,
              "time_requested":"18 DEC 2017"]
             
         ]
         self.ticketListTable.reloadData()
         deSelectAllTabs()
         btnUpcoming.setImage(UIImage(imageLiteralResourceName: "upcoming_tab_active"), for: UIControlState.normal)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self,   selector: (#selector(addARow)), userInfo: nil, repeats: false)
+    }
+    @objc func addARow(){
+        self.shouldAnimateRowBackgroundColorOnAdition = true
+        self.currentTicket.insert(["name":"Carlos Kamini",
+                                   "address":"78 Mayami, FL",
+                                   "job_id":"123100",
+                                   "mix_design": "$ 1258",
+                                   "yards":"500",
+                                   "status":"upcoming",
+                                   "is_critical":false,
+                                   "time_requested":"18 DEC 2017"], at: 0);
+        ticketListTable.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.top)
+        let cell = ticketListTable.cellForRow(at: IndexPath(row: 0, section: 0)) as! TicketListTableViewCell
+        cell.container.backgroundColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
+        UIView.animate(withDuration: 2.0) {
+            cell.container.backgroundColor = UIColor(displayP3Red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
     }
     
-    @IBAction func actionPast(_ sender: Any) {        
+    @IBAction func actionPast(_ sender: Any) {
+        timer.invalidate()
         self.currentTicket = [
             ["name":"Gareth Bale",
              "address":"50 Honolulu, HI",
@@ -177,7 +296,6 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
              "status":"past",
              "is_critical":false,
              "time_requested":"18 Nov 2016"]
-            
         ]
         self.ticketListTable.reloadData()
         deSelectAllTabs()
@@ -187,14 +305,43 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         self.performSegue(withIdentifier: ControllersSegue.editTicket.rawValue, sender: nil)
     }
     func didCriticalPressed(selectedRow: TicketListTableViewCell) {
+        
+        overlay.frame = self.view.frame
+        overlay.bounds = self.view.bounds
+        overlay.backgroundColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        self.view.addSubview(overlay)
         noteView.center = CGPoint(x: self.view.frame.size.width  / 2, y: self.view.frame.size.height / 2)
-        self.view.addSubview(noteView)
+        overlay.addSubview(noteView)
     }
     func didNoteAdded(note: String) {
-        
+        noteView.removeFromSuperview()
+        overlay.removeFromSuperview()
     }
     
     func didAddNotePopupClose() {
         noteView.removeFromSuperview()
+        overlay.removeFromSuperview()
+    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let frame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        print("Key board y:", frame.origin.y)
+        print("Login button y", self.noteView.frame.origin.y)
+        //need to liftup the scrollview
+        let displacement = self.noteView.frame.origin.y - frame.origin.y;
+        //adding some nitty padding bellow
+        let totalDisplacement = displacement + 300
+        /*self.scrollView.contentSize = CGSize(width: self.scrollView.contentSize.width, height: self.scrollView.contentSize.height + totalDisplacement)
+         self.scrollView.setContentOffset(CGPoint(x: 0, y: totalDisplacement), animated: true);*/
+        UIView.animate(withDuration: 2.0, animations: {
+            self.noteView.frame = CGRect(x: self.noteView.frame.origin.x, y: self.noteView.frame.origin.y - totalDisplacement, width: self.noteView.frame.width, height: self.noteView.frame.height)
+        })
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 2.0, animations: {
+            self.noteView.center = CGPoint(x: self.view.frame.size.width  / 2, y: self.view.frame.size.height / 2)
+        })
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }

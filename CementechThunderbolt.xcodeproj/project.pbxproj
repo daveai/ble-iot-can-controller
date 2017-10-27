@@ -156,6 +156,7 @@
 		3AF345091FA1F5270029842B /* ImageFrame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFrame.xib; sourceTree = "<group>"; };
 		3AF3450B1FA1F6540029842B /* ImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
 		3AF3450E1FA213600029842B /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
+		3AF345111FA22C580029842B /* CementechThunderbolt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CementechThunderbolt-Bridging-Header.h"; sourceTree = "<group>"; };
 		3AF7BDA71F8E592C0063BEB1 /* EditTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketViewController.swift; sourceTree = "<group>"; };
 		4329BD1D0818D1BBE38A3399 /* Pods-CementechThunderboltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CementechThunderboltTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CementechThunderboltTests/Pods-CementechThunderboltTests.debug.xcconfig"; sourceTree = "<group>"; };
 		56F0B92C68EC0269CF5BEE4F /* Pods-CementechThunderboltUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CementechThunderboltUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CementechThunderboltUITests/Pods-CementechThunderboltUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 		3A09CC0E1F8631500093F9E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3A234F0D1FA31621000208E4 /* Setup */,
 				3AF3450D1FA2133B0029842B /* Support */,
 				3ADDD0E01F99D06E00DA1CC2 /* Orders */,
 				3AE2223B1F94F2A20013A2B8 /* Modes */,
@@ -279,6 +281,13 @@
 				3A1858C31F90C8EA00F4AA6C /* YPDrawSignatureView.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3A234F0D1FA31621000208E4 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 		3A460ADD1F8CAF7400E92984 /* TicketListCell */ = {
@@ -381,19 +390,20 @@
 		3ABA91F61F860D0D00E5E0D3 /* CementechThunderbolt */ = {
 			isa = PBXGroup;
 			children = (
-				3AE222501F950C370013A2B8 /* www */,
-				3A1858C21F90C8C500F4AA6C /* Extentions */,
-				3AEB883A1F875D2D00D56593 /* Fragments */,
-				3A09CC171F8656070093F9E4 /* Fonts */,
-				3A09CC101F8631850093F9E4 /* ViewModels */,
-				3A09CC0F1F8631760093F9E4 /* Models */,
-				3A09CC0E1F8631500093F9E4 /* Storyboards */,
-				3A09CC0D1F86312A0093F9E4 /* ViewControllers */,
 				3ABA91F71F860D0D00E5E0D3 /* AppDelegate.swift */,
 				3ABA92011F860D0D00E5E0D3 /* Assets.xcassets */,
-				3ABA92061F860D0D00E5E0D3 /* Info.plist */,
 				3ABA91FE1F860D0D00E5E0D3 /* CementechThunderbolt.xcdatamodeld */,
+				3A1858C21F90C8C500F4AA6C /* Extentions */,
+				3A09CC171F8656070093F9E4 /* Fonts */,
+				3AEB883A1F875D2D00D56593 /* Fragments */,
 				3AE2224B1F9508A00013A2B8 /* index.html */,
+				3ABA92061F860D0D00E5E0D3 /* Info.plist */,
+				3A09CC0F1F8631760093F9E4 /* Models */,
+				3A09CC0E1F8631500093F9E4 /* Storyboards */,
+				3AF345101FA22C200029842B /* Utils */,
+				3A09CC0D1F86312A0093F9E4 /* ViewControllers */,
+				3A09CC101F8631850093F9E4 /* ViewModels */,
+				3AE222501F950C370013A2B8 /* www */,
 			);
 			path = CementechThunderbolt;
 			sourceTree = "<group>";
@@ -478,6 +488,14 @@
 				3AF3450E1FA213600029842B /* Support.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		3AF345101FA22C200029842B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3AF345111FA22C580029842B /* CementechThunderbolt-Bridging-Header.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		436C5656B640F8F653CE6D9F /* Pods */ = {
@@ -606,6 +624,7 @@
 					};
 					3ABA91F31F860D0D00E5E0D3 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					3ABA920A1F860D0E00E5E0D3 = {
@@ -1106,6 +1125,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F9A72JHQF;
@@ -1116,6 +1137,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CementechThunderbolt/Utils/CementechThunderbolt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1127,6 +1150,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1138,6 +1163,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CementechThunderbolt/Utils/CementechThunderbolt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
