@@ -8,7 +8,9 @@
 
 import UIKit
 class DashboardViewController: UIViewController, MenuItemDelegate {
-    
+    class StoryBoardSegue {
+        public static let toLogin = "toLogin"
+    }
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var leftMenuView: LeftMenuView!
     var storyBoards = [
@@ -91,5 +93,7 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
             add(asChildViewController: childViewController)
         }
     }
-    
+    func didLogout() {
+        self.performSegue(withIdentifier: StoryBoardSegue.toLogin, sender: self)
+    }
 }
