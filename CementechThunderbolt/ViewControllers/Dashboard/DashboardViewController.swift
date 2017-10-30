@@ -16,6 +16,7 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     var storyBoards = [
         StoryBoard(storyBoardName: "Orders", display: "Orders"),
         StoryBoard(storyBoardName: "Modes", display: "Modes"),
+        StoryBoard(storyBoardName: "Setup", display: "Setup"),
         StoryBoard(storyBoardName: "Support", display: "Support")
     ];
     private func add(asChildViewController viewController: UIViewController) {

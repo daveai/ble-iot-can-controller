@@ -32,6 +32,10 @@
 		3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB737F1F8F4F8C001099C0 /* EditTicketViewModel.swift */; };
 		3AAB73821F8F5672001099C0 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB73811F8F5672001099C0 /* TicketModel.swift */; };
 		3AAB73831F8F587E001099C0 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87E2B81F8D0EED0099B232 /* CustomUITextField.swift */; };
+		3AB35B251FA70A760062A701 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB35B241FA70A760062A701 /* CoreBluetooth.framework */; };
+		3AB35B271FA70AAD0062A701 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB35B261FA70AAD0062A701 /* Setup.storyboard */; };
+		3AB35B2A1FA70C1B0062A701 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB35B291FA70C1B0062A701 /* SetupViewController.swift */; };
+		3AB35B2D1FA714730062A701 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB35B2C1FA714730062A701 /* DeviceTableViewCell.swift */; };
 		3ABA91F81F860D0D00E5E0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA91F71F860D0D00E5E0D3 /* AppDelegate.swift */; };
 		3ABA91FA1F860D0D00E5E0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA91F91F860D0D00E5E0D3 /* ViewController.swift */; };
 		3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABA91FB1F860D0D00E5E0D3 /* Main.storyboard */; };
@@ -126,6 +130,10 @@
 		3A8F885E1F909F5100297FBF /* CreateTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewModel.swift; sourceTree = "<group>"; };
 		3AAB737F1F8F4F8C001099C0 /* EditTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketViewModel.swift; sourceTree = "<group>"; };
 		3AAB73811F8F5672001099C0 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		3AB35B241FA70A760062A701 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3AB35B261FA70AAD0062A701 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
+		3AB35B291FA70C1B0062A701 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		3AB35B2C1FA714730062A701 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		3ABA91F41F860D0D00E5E0D3 /* CementechThunderbolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CementechThunderbolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABA91F71F860D0D00E5E0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABA91F91F860D0D00E5E0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB35B251FA70A760062A701 /* CoreBluetooth.framework in Frameworks */,
 				3A81D9511F9F308600A049CC /* CoreLocation.framework in Frameworks */,
 				3A09CC131F8652540093F9E4 /* QuartzCore.framework in Frameworks */,
 				3A87E2B01F8D0EAB0099B232 /* LayerUIExtention.framework in Frameworks */,
@@ -210,6 +219,7 @@
 		3A09CC0D1F86312A0093F9E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AB35B281FA70BFE0062A701 /* Setup */,
 				3A81D94D1F9F304400A049CC /* Navigation */,
 				3AE222411F9501110013A2B8 /* Modes */,
 				3A6F0FDD1F8BB4EC005AD863 /* Ticket */,
@@ -258,6 +268,7 @@
 		3A09CC111F8652540093F9E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AB35B241FA70A760062A701 /* CoreBluetooth.framework */,
 				3A81D9501F9F308600A049CC /* CoreLocation.framework */,
 				3A09CC121F8652540093F9E4 /* QuartzCore.framework */,
 				CE9376A3ACEFE4F01A52906A /* Pods_CementechThunderbolt.framework */,
@@ -286,6 +297,7 @@
 		3A234F0D1FA31621000208E4 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				3AB35B261FA70AAD0062A701 /* Setup.storyboard */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -361,6 +373,23 @@
 				3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */,
 			);
 			path = LayerUIExtention;
+			sourceTree = "<group>";
+		};
+		3AB35B281FA70BFE0062A701 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				3AB35B2B1FA714530062A701 /* Cells */,
+				3AB35B291FA70C1B0062A701 /* SetupViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		3AB35B2B1FA714530062A701 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3AB35B2C1FA714730062A701 /* DeviceTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3ABA91EB1F860D0D00E5E0D3 = {
@@ -678,6 +707,7 @@
 				3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */,
 				3ABA92021F860D0D00E5E0D3 /* Assets.xcassets in Resources */,
 				3AEB883C1F875DEC00D56593 /* LeftMenuView.xib in Resources */,
+				3AB35B271FA70AAD0062A701 /* Setup.storyboard in Resources */,
 				3AF3450F1FA213600029842B /* Support.storyboard in Resources */,
 				3AEB88411F87710400D56593 /* LeftMenuCell.xib in Resources */,
 				3AE222401F94FDB70013A2B8 /* Modes.storyboard in Resources */,
@@ -879,10 +909,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB35B2D1FA714730062A701 /* DeviceTableViewCell.swift in Sources */,
 				3AE2223A1F94DA290013A2B8 /* PTSans.ttc in Sources */,
 				3ADEDC0D1F94C7BF00594BC8 /* AddNote.swift in Sources */,
 				3A1858BF1F90BFEB00F4AA6C /* SignaturePopup.swift in Sources */,
 				3AAB73801F8F4F8C001099C0 /* EditTicketViewModel.swift in Sources */,
+				3AB35B2A1FA70C1B0062A701 /* SetupViewController.swift in Sources */,
 				3A1858C41F90C8EA00F4AA6C /* YPDrawSignatureView.swift in Sources */,
 				3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */,
 				3AE222431F95012C0013A2B8 /* ModesViewController.swift in Sources */,
