@@ -16,15 +16,21 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     @IBOutlet weak var selectedDeviceUUID: UILabel!    
     @IBOutlet weak var connectionIndicator: CustomUIView!
     @IBOutlet weak var btnConnect: UIBarButtonItem!
+    @IBOutlet weak var tfSendContent: UITextField!
+    @IBOutlet weak var testConnectionView: UIView!
     var centralManager:CBCentralManager?
     var discoveredPeripheral:CBPeripheral?
     var data:String?
     var devices:[CBPeripheral] = []
     var isConnected:Bool = false
+    let serviceUUID = "713D0000-503E-4C75-BA94-3148F18D941E"
+    let rxCharUUID = "713D0003-503E-4C75-BA94-3148F18D941E"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
         self.scanActivityIndecator.isHidden = true
+        self.connectionIndicator.isHidden = true
+        testConnectionView.isHidden = true
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -69,6 +75,7 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         selectedDeviceName.text = devices[indexPath.row].name
         selectedDeviceUUID.text = String(describing: devices[indexPath.row].identifier)
         self.discoveredPeripheral = devices[indexPath.row]
+        self.connectionIndicator.isHidden = false
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 64.0
@@ -78,6 +85,8 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     }
     
     @IBAction func startScan(_ sender: Any) {
+        devices.removeAll()
+        deviceTable.reloadData()
         self.centralManagerDidUpdateState(self.centralManager!)
         self.scanActivityIndecator.isHidden = false
         self.scanActivityIndecator.startAnimating()
@@ -87,6 +96,8 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
             self.cleanUp()
             btnConnect.title = "Connect"
             self.isConnected = false
+            devices.removeAll()
+            deviceTable.reloadData()
             deviceTable.isUserInteractionEnabled = true
             self.connectionIndicator.backgroundColor = UIColor.red
         } else {
@@ -108,12 +119,10 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         btnConnect.title = "Disconnect"
         deviceTable.isUserInteractionEnabled = false
         peripheral.delegate = self;
-        peripheral.discoverServices([CBUUID(string: "713D0000-503E-4C75-BA94-3148F18D941E")])
-        
+        //peripheral.discoverServices([CBUUID(string: serviceUUID)])
+        peripheral.discoverServices(nil)
     }
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
-        print("Services")
-        print(peripheral.services)
         if(error == nil){
             for service in peripheral.services! {
                 peripheral.discoverCharacteristics(nil, for: service)
@@ -125,13 +134,33 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         }
     }
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
-        print("characteristics")
         for characteristic in service.characteristics! {
             self.discoveredPeripheral?.setNotifyValue(true, for: characteristic)
+            print("characteristics: \(characteristic.uuid.uuidString) for service: \(service.uuid.uuidString) ")
+            
         }
+        testConnectionView.isHidden = false
     }
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-        print(String(data: characteristic.value!, encoding: String.Encoding.utf8))
+        print(String(data: characteristic.value!, encoding: .utf8))
+    }
+    
+    @IBAction func actionSend(_ sender: Any) {
+        var myService:CBService!
+        var myCharac:CBCharacteristic!
+        for service in (self.discoveredPeripheral?.services)! {
+            if service.uuid.uuidString == serviceUUID {
+                myService = service
+                for characterictic in service.characteristics! {
+                    if characterictic.uuid.uuidString == rxCharUUID {
+                        myCharac = characterictic
+                    }
+                }
+            }
+        }
+        let data:String = "Hello"
+        self.discoveredPeripheral?.writeValue(data.data(using: .utf8)!, for: myCharac, type: CBCharacteristicWriteType.withoutResponse)
+        //self.discoveredPeripheral?.readValue(for: myCharac)
     }
     func cleanUp(){
         if self.discoveredPeripheral?.services != nil {
