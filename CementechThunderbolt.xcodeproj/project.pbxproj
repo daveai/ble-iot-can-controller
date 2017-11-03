@@ -13,9 +13,12 @@
 		3A1858BF1F90BFEB00F4AA6C /* SignaturePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */; };
 		3A1858C41F90C8EA00F4AA6C /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1858C31F90C8EA00F4AA6C /* YPDrawSignatureView.swift */; };
 		3A1A0EE71F8FC1E30092A988 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */; };
+		3A32DC5D1FAB334100A45477 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A32DC5C1FAB334100A45477 /* About.storyboard */; };
+		3A32DC601FAB591400A45477 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A32DC5F1FAB591400A45477 /* Settings.storyboard */; };
 		3A460ADC1F8CAEEF00E92984 /* ListTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */; };
 		3A460ADF1F8CAFAA00E92984 /* TicketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */; };
 		3A5A63EC1F9F21F600C32FD8 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */; };
+		3A5E00A51FAC532F00265980 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E00A41FAC532F00265980 /* AboutViewController.swift */; };
 		3A64F3C41F87968200EB53A2 /* Pilots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A64F3C31F87968200EB53A2 /* Pilots.storyboard */; };
 		3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */; };
 		3A64F3C91F87981800EB53A2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */; };
@@ -111,9 +114,12 @@
 		3A1858BE1F90BFEB00F4AA6C /* SignaturePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePopup.swift; sourceTree = "<group>"; };
 		3A1858C31F90C8EA00F4AA6C /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		3A1A0EE61F8FC1E30092A988 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		3A32DC5C1FAB334100A45477 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		3A32DC5F1FAB591400A45477 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		3A460ADB1F8CAEEF00E92984 /* ListTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTicketsViewController.swift; sourceTree = "<group>"; };
 		3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListTableViewCell.swift; sourceTree = "<group>"; };
 		3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
+		3A5E00A41FAC532F00265980 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		3A64F3C31F87968200EB53A2 /* Pilots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pilots.storyboard; sourceTree = "<group>"; };
 		3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +160,6 @@
 		3AE0A2AE1F8B5AC50008F496 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
 		3AE2223F1F94FDB70013A2B8 /* Modes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
 		3AE222421F95012C0013A2B8 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
-		3AE2224B1F9508A00013A2B8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3AE222501F950C370013A2B8 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		3AEB88381F875CDE00D56593 /* DashboardRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardRoot.storyboard; sourceTree = "<group>"; };
 		3AEB883B1F875DEC00D56593 /* LeftMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuView.xib; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 		3A09CC0D1F86312A0093F9E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A5E00A31FAC530E00265980 /* About */,
 				3AB35B281FA70BFE0062A701 /* Setup */,
 				3A81D94D1F9F304400A049CC /* Navigation */,
 				3AE222411F9501110013A2B8 /* Modes */,
@@ -234,6 +240,8 @@
 		3A09CC0E1F8631500093F9E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3A32DC5E1FAB58FD00A45477 /* Settings */,
+				3A32DC5B1FAB332800A45477 /*  About */,
 				3A234F0D1FA31621000208E4 /* Setup */,
 				3AF3450D1FA2133B0029842B /* Support */,
 				3ADDD0E01F99D06E00DA1CC2 /* Orders */,
@@ -302,12 +310,36 @@
 			path = Setup;
 			sourceTree = "<group>";
 		};
+		3A32DC5B1FAB332800A45477 /*  About */ = {
+			isa = PBXGroup;
+			children = (
+				3A32DC5C1FAB334100A45477 /* About.storyboard */,
+			);
+			path = " About";
+			sourceTree = "<group>";
+		};
+		3A32DC5E1FAB58FD00A45477 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3A32DC5F1FAB591400A45477 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		3A460ADD1F8CAF7400E92984 /* TicketListCell */ = {
 			isa = PBXGroup;
 			children = (
 				3A460ADE1F8CAFAA00E92984 /* TicketListTableViewCell.swift */,
 			);
 			path = TicketListCell;
+			sourceTree = "<group>";
+		};
+		3A5E00A31FAC530E00265980 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E00A41FAC532F00265980 /* AboutViewController.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		3A64F3C21F87965A00EB53A2 /* Pilots */ = {
@@ -398,10 +430,10 @@
 				3ABA91F61F860D0D00E5E0D3 /* CementechThunderbolt */,
 				3ABA920E1F860D0E00E5E0D3 /* CementechThunderboltTests */,
 				3ABA92191F860D0E00E5E0D3 /* CementechThunderboltUITests */,
-				3A87E2AA1F8D0EAB0099B232 /* LayerUIExtention */,
-				3ABA91F51F860D0D00E5E0D3 /* Products */,
 				3A09CC111F8652540093F9E4 /* Frameworks */,
+				3A87E2AA1F8D0EAB0099B232 /* LayerUIExtention */,
 				436C5656B640F8F653CE6D9F /* Pods */,
+				3ABA91F51F860D0D00E5E0D3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,7 +457,6 @@
 				3A1858C21F90C8C500F4AA6C /* Extentions */,
 				3A09CC171F8656070093F9E4 /* Fonts */,
 				3AEB883A1F875D2D00D56593 /* Fragments */,
-				3AE2224B1F9508A00013A2B8 /* index.html */,
 				3ABA92061F860D0D00E5E0D3 /* Info.plist */,
 				3A09CC0F1F8631760093F9E4 /* Models */,
 				3A09CC0E1F8631500093F9E4 /* Storyboards */,
@@ -702,6 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF345081FA1E08D0029842B /* PTSans.ttc in Resources */,
+				3A32DC601FAB591400A45477 /* Settings.storyboard in Resources */,
 				3AF3450A1FA1F5270029842B /* ImageFrame.xib in Resources */,
 				3AE222511F950C380013A2B8 /* www in Resources */,
 				3ABA92051F860D0D00E5E0D3 /* LaunchScreen.storyboard in Resources */,
@@ -715,6 +747,7 @@
 				3ADDD0E21F99D0A000DA1CC2 /* Orders.storyboard in Resources */,
 				3AE0A2AF1F8B5AC50008F496 /* Ticket.storyboard in Resources */,
 				3ABA91FD1F860D0D00E5E0D3 /* Main.storyboard in Resources */,
+				3A32DC5D1FAB334100A45477 /* About.storyboard in Resources */,
 				3ADEDC0B1F94C46400594BC8 /* AddNote.xib in Resources */,
 				3AEB88391F875CDE00D56593 /* DashboardRoot.storyboard in Resources */,
 				3A1858BD1F90BCCE00F4AA6C /* SignaturePopup.xib in Resources */,
@@ -933,6 +966,7 @@
 				3A460ADF1F8CAFAA00E92984 /* TicketListTableViewCell.swift in Sources */,
 				3AEB88431F87720100D56593 /* LeftMenuTableViewCell.swift in Sources */,
 				3AF7BDA81F8E592C0063BEB1 /* EditTicketViewController.swift in Sources */,
+				3A5E00A51FAC532F00265980 /* AboutViewController.swift in Sources */,
 				3A64F3C91F87981800EB53A2 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

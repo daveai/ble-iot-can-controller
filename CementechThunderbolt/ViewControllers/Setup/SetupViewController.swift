@@ -15,6 +15,7 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     @IBOutlet weak var selectedDeviceName: UILabel!
     @IBOutlet weak var selectedDeviceUUID: UILabel!    
     @IBOutlet weak var connectionIndicator: CustomUIView!
+    @IBOutlet weak var tfReceivedChars: UITextView!
     @IBOutlet weak var btnConnect: UIBarButtonItem!
     @IBOutlet weak var tfSendContent: UITextField!
     @IBOutlet weak var testConnectionView: UIView!
@@ -25,6 +26,7 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     var isConnected:Bool = false
     let serviceUUID = "713D0000-503E-4C75-BA94-3148F18D941E"
     let rxCharUUID = "713D0003-503E-4C75-BA94-3148F18D941E"
+    let txCharUUID = "713d0002-503e-4c75-ba94-3148f18d941e"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
@@ -93,13 +95,7 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     }
     @IBAction func actionConnectDisconnect(_ sender: Any) {
         if isConnected {
-            self.cleanUp()
-            btnConnect.title = "Connect"
-            self.isConnected = false
-            devices.removeAll()
-            deviceTable.reloadData()
-            deviceTable.isUserInteractionEnabled = true
-            self.connectionIndicator.backgroundColor = UIColor.red
+            self.centralManager?.cancelPeripheralConnection(self.discoveredPeripheral!)
         } else {
             self.centralManager?.connect(self.discoveredPeripheral!, options: nil)
         }
@@ -119,8 +115,21 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         btnConnect.title = "Disconnect"
         deviceTable.isUserInteractionEnabled = false
         peripheral.delegate = self;
-        //peripheral.discoverServices([CBUUID(string: serviceUUID)])
-        peripheral.discoverServices(nil)
+        peripheral.discoverServices([CBUUID(string: serviceUUID)])
+        //peripheral.discoverServices(nil)
+    }
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        self.cleanUp()
+        btnConnect.title = "Connect"
+        self.isConnected = false
+        devices.removeAll()
+        deviceTable.reloadData()
+        deviceTable.isUserInteractionEnabled = true
+        self.connectionIndicator.backgroundColor = UIColor.red
+        testConnectionView.isHidden = false
+        self.centralManagerDidUpdateState(self.centralManager!)
+        self.scanActivityIndecator.isHidden = true
+        self.scanActivityIndecator.startAnimating()
     }
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if(error == nil){
@@ -142,9 +151,9 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         testConnectionView.isHidden = false
     }
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-        print(String(data: characteristic.value!, encoding: .utf8))
+        print(characteristic)
+        tfReceivedChars.text = tfReceivedChars.text! + " " + String(data: characteristic.value!, encoding: .utf8)!
     }
-    
     @IBAction func actionSend(_ sender: Any) {
         var myService:CBService!
         var myCharac:CBCharacteristic!
@@ -158,8 +167,10 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
                 }
             }
         }
-        let data:String = "Hello"
-        self.discoveredPeripheral?.writeValue(data.data(using: .utf8)!, for: myCharac, type: CBCharacteristicWriteType.withoutResponse)
+        //var num:Int = 1
+        print(tfSendContent.text!)
+        let data = tfSendContent.text!.data(using: .utf8)
+        self.discoveredPeripheral?.writeValue(data!, for: myCharac, type: CBCharacteristicWriteType.withoutResponse)
         //self.discoveredPeripheral?.readValue(for: myCharac)
     }
     func cleanUp(){

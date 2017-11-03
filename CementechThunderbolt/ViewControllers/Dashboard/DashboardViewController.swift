@@ -17,7 +17,9 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
         StoryBoard(storyBoardName: "Orders", display: "Orders"),
         StoryBoard(storyBoardName: "Modes", display: "Modes"),
         StoryBoard(storyBoardName: "Setup", display: "Setup"),
-        StoryBoard(storyBoardName: "Support", display: "Support")
+        StoryBoard(storyBoardName: "Support", display: "Support"),
+        StoryBoard(storyBoardName: "Settings", display: "Settings"),
+        StoryBoard(storyBoardName: "About", display: "About")
     ];
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller
