@@ -23,6 +23,7 @@
 		3A64F3C71F8796D700EB53A2 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */; };
 		3A64F3C91F87981800EB53A2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */; };
 		3A64F3CB1F87A98100EB53A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */; };
+		3A673D271FB048D20037E784 /* CustomUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A673D261FB048D20037E784 /* CustomUITextView.swift */; };
 		3A6F0FDF1F8BB511005AD863 /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */; };
 		3A81D94F1F9F306300A049CC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81D94E1F9F306300A049CC /* NavigationViewController.swift */; };
 		3A81D9511F9F308600A049CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A81D9501F9F308600A049CC /* CoreLocation.framework */; };
@@ -124,6 +125,7 @@
 		3A64F3C61F8796D700EB53A2 /* PilotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		3A64F3C81F87981800EB53A2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		3A64F3CA1F87A98100EB53A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A673D261FB048D20037E784 /* CustomUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextView.swift; sourceTree = "<group>"; };
 		3A6F0FDE1F8BB511005AD863 /* CreateTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
 		3A81D94E1F9F306300A049CC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		3A81D9501F9F308600A049CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -403,6 +405,7 @@
 				3A87E2B81F8D0EED0099B232 /* CustomUITextField.swift */,
 				3A87E2BA1F8D10540099B232 /* CustomUIButton.swift */,
 				3A5A63EB1F9F21F600C32FD8 /* CustomUIImageView.swift */,
+				3A673D261FB048D20037E784 /* CustomUITextView.swift */,
 			);
 			path = LayerUIExtention;
 			sourceTree = "<group>";
@@ -935,6 +938,7 @@
 				3AAB73831F8F587E001099C0 /* CustomUITextField.swift in Sources */,
 				3A5A63EC1F9F21F600C32FD8 /* CustomUIImageView.swift in Sources */,
 				3A87E2B71F8D0ECB0099B232 /* CustomUIView.swift in Sources */,
+				3A673D271FB048D20037E784 /* CustomUITextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
