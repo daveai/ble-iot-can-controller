@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTSans.ttc">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="WLz-L3-eWr" customClass="NotificationTableViewCell" customModule="CementechThunderbolt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLz-L3-eWr" id="U1C-xJ-tXn">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have got a new order from ABCD Inc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-T6-afd">
+                        <rect key="frame" x="16" y="11" width="268" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wWc-xr-oJ4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRk-Tk-S3x">
+                        <rect key="frame" x="16" y="40" width="268" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SHl-Rg-Vde"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
+                        <color key="textColor" red="0.69071573549999998" green="0.69755450510000006" blue="0.69755450510000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4k3-T6-afd" firstAttribute="leading" secondItem="U1C-xJ-tXn" secondAttribute="leadingMargin" id="A91-ZG-yj3"/>
+                    <constraint firstItem="4k3-T6-afd" firstAttribute="top" secondItem="U1C-xJ-tXn" secondAttribute="topMargin" id="COl-bj-2K5"/>
+                    <constraint firstItem="zRk-Tk-S3x" firstAttribute="leading" secondItem="U1C-xJ-tXn" secondAttribute="leading" constant="16" id="ZMT-KM-GIO"/>
+                    <constraint firstItem="4k3-T6-afd" firstAttribute="trailing" secondItem="U1C-xJ-tXn" secondAttribute="trailingMargin" id="dVP-LT-UIb"/>
+                    <constraint firstAttribute="trailing" secondItem="zRk-Tk-S3x" secondAttribute="trailing" constant="16" id="jcj-Kg-b9I"/>
+                    <constraint firstItem="zRk-Tk-S3x" firstAttribute="top" secondItem="4k3-T6-afd" secondAttribute="bottom" constant="8" id="mhl-HK-nhN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <point key="canvasLocation" x="-3.5" y="-43"/>
+        </tableViewCell>
+    </objects>
+</document>

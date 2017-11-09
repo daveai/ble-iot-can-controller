@@ -45,6 +45,7 @@ class CreateTicketViewController: UIViewController, UIPickerViewDelegate, UIPick
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         statusField.inputAccessoryView = toolBar
+        makeNotificationBarButton(viewController: self)
         
     }
 

@@ -19,6 +19,7 @@ class ModesViewController: UIViewController, UIWebViewDelegate {
         let urlRequest = URLRequest(url: path!)
         webView.loadRequest(urlRequest)
         //self.webView.scrollView.isScrollEnabled = false
+        makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

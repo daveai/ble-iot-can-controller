@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GWE-oh-l6C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GWE-oh-l6C">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Dashboard View Controller-->
         <scene sceneID="XvK-EN-gKC">
             <objects>
-                <viewController id="GWE-oh-l6C" customClass="DashboardViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GWE-oh-l6C" customClass="DashboardViewController" customModule="CementechThunderbolt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y0R-Mj-UrR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ln4-Yj-UqI"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MTR-uL-SXK">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,16 +36,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="trailing" secondItem="0Ya-Un-N9P" secondAttribute="trailing" id="0Pu-Rn-fDH"/>
-                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="top" secondItem="0Ya-Un-N9P" secondAttribute="top" id="Bg2-KQ-Vtw"/>
+                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="trailing" secondItem="MTR-uL-SXK" secondAttribute="trailing" id="0Pu-Rn-fDH"/>
+                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="top" secondItem="y0R-Mj-UrR" secondAttribute="bottom" id="Bg2-KQ-Vtw"/>
                             <constraint firstItem="WIK-SW-YgU" firstAttribute="top" secondItem="MTR-uL-SXK" secondAttribute="top" constant="20" id="C1a-iW-zEY"/>
                             <constraint firstItem="qGS-Jo-Kpa" firstAttribute="leading" secondItem="WIK-SW-YgU" secondAttribute="trailing" id="GV0-FA-F5P"/>
-                            <constraint firstItem="WIK-SW-YgU" firstAttribute="leading" secondItem="0Ya-Un-N9P" secondAttribute="leading" id="MWs-FS-e9a"/>
-                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="bottom" secondItem="0Ya-Un-N9P" secondAttribute="bottom" id="UwD-QR-Avr"/>
-                            <constraint firstItem="WIK-SW-YgU" firstAttribute="bottom" secondItem="0Ya-Un-N9P" secondAttribute="bottom" id="YAG-ml-54t"/>
+                            <constraint firstItem="WIK-SW-YgU" firstAttribute="leading" secondItem="MTR-uL-SXK" secondAttribute="leading" id="MWs-FS-e9a"/>
+                            <constraint firstItem="qGS-Jo-Kpa" firstAttribute="bottom" secondItem="ln4-Yj-UqI" secondAttribute="top" id="UwD-QR-Avr"/>
+                            <constraint firstItem="WIK-SW-YgU" firstAttribute="bottom" secondItem="ln4-Yj-UqI" secondAttribute="top" id="YAG-ml-54t"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Ya-Un-N9P"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Gt5-ry-UBd"/>
                     <connections>
                         <outlet property="container" destination="qGS-Jo-Kpa" id="fdX-bj-YxE"/>
                         <outlet property="leftMenuView" destination="WIK-SW-YgU" id="v94-Qt-6Nt"/>
@@ -50,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCo-km-B1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5065.4296875" y="-841.40625"/>
+            <point key="canvasLocation" x="-4112" y="-808"/>
         </scene>
         <!--Main-->
         <scene sceneID="WiR-a2-xi9">
@@ -58,7 +62,7 @@
                 <viewControllerPlaceholder storyboardName="Main" id="xe0-ao-FaT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fg8-ZH-RO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4629" y="-841"/>
+            <point key="canvasLocation" x="-4112" y="-370"/>
         </scene>
     </scenes>
 </document>

@@ -21,6 +21,7 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         HUD.show(HUDContentType.labeledProgress(title: "", subtitle: "Fetching your current location"))
         locationManager.delegate = self
         self.mapView.delegate = self
+        makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
