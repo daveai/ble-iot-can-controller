@@ -62,7 +62,6 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
         view.layer.addSublayer(border)
         return view
     }
-    
     // MARK: UITableView
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,7 +70,6 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let identifier = "cell"
         var cell: LeftMenuTableViewCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? LeftMenuTableViewCell
         if cell == nil {
@@ -83,7 +81,7 @@ class LeftMenuView: UIView, UITableViewDelegate, UITableViewDataSource {
         cell.contentView.backgroundColor = UIColor.clear
         cell.backgroundView = UIView()
         cell.selectedBackgroundView = UIView()
-        if(indexPath.row == 0){
+        if(indexPath.row == 0 && self.selectedMenu == nil){
             cell.selectionTriangle.isHidden = false
             self.selectedMenu = cell
         }

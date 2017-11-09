@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationListView" customModule="CementechThunderbolt" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="V33-tU-1Ew">
+                    <rect key="frame" x="335" y="0.0" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Ivt-JT-EGI"/>
+                        <constraint firstAttribute="width" constant="15" id="bRx-9I-bKs"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVG-JN-JgO" customClass="CustomUIView" customModule="LayerUIExtention">
+                    <rect key="frame" x="0.0" y="15" width="350" height="285"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="3CW-d5-zOA">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="285"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="qwv-yE-GS7"/>
+                                <outlet property="delegate" destination="-1" id="axH-p0-xAi"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3CW-d5-zOA" firstAttribute="top" secondItem="UVG-JN-JgO" secondAttribute="top" id="R47-Ih-39i"/>
+                        <constraint firstAttribute="bottom" secondItem="3CW-d5-zOA" secondAttribute="bottom" id="To6-bT-hx5"/>
+                        <constraint firstItem="3CW-d5-zOA" firstAttribute="leading" secondItem="UVG-JN-JgO" secondAttribute="leading" id="rgz-P3-NOB"/>
+                        <constraint firstAttribute="trailing" secondItem="3CW-d5-zOA" secondAttribute="trailing" id="vuT-30-K4H"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94525176286697388" green="0.94596821069717407" blue="0.94536274671554565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UVG-JN-JgO" firstAttribute="top" secondItem="V33-tU-1Ew" secondAttribute="bottom" id="9BW-mg-d3T"/>
+                <constraint firstItem="UVG-JN-JgO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="VOl-Gl-BEr"/>
+                <constraint firstItem="V33-tU-1Ew" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZeC-6O-TJy"/>
+                <constraint firstAttribute="trailing" secondItem="V33-tU-1Ew" secondAttribute="trailing" id="bya-dz-M86"/>
+                <constraint firstItem="UVG-JN-JgO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pAn-fm-R1z"/>
+                <constraint firstItem="UVG-JN-JgO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ufR-xX-S92"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-144" y="-155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notification_arrow" width="15" height="15"/>
+    </resources>
+</document>

@@ -29,6 +29,7 @@ class EditTicketViewController: UIViewController, SignaturePopupDelegete, AddNot
         signaturePopup.delegate = self;
         addNotePopup.delegate = self;
         setUp(editTicketViewModel: self.viewModel)
+        makeNotificationBarButton(viewController: self)
     }
     func setUp(editTicketViewModel:EditTicketViewModel){
         bindWithViewModel(viewModel: editTicketViewModel)

@@ -19,6 +19,7 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
         StoryBoard(storyBoardName: "Setup", display: "Setup"),
         StoryBoard(storyBoardName: "Support", display: "Support"),
         StoryBoard(storyBoardName: "Settings", display: "Settings"),
+        StoryBoard(storyBoardName: "Notification", display: "Notification"),
         StoryBoard(storyBoardName: "About", display: "About")
     ];
     private func add(asChildViewController viewController: UIViewController) {
@@ -57,13 +58,13 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
             // Load Storyboard
             let storyboard = UIStoryboard(name: storyBoards[0].storyBoardName, bundle: Bundle.main)
             // Instantiate View Controller
-            let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
-            viewController.accessibilityValue = storyBoards[0].storyBoardName
+            let viewController = storyboard.instantiateInitialViewController() as! UINavigationController            
+            viewController.accessibilityValue = storyBoards[0].storyBoardName            
             return viewController
         }()
         add(asChildViewController: childViewController)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -89,7 +90,7 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
                 // Load Storyboard
                 let storyboard = UIStoryboard(name: menu.storyBoardName, bundle: Bundle.main)
                 // Instantiate View Controller
-                let viewController = storyboard.instantiateInitialViewController() as! UINavigationController
+                let viewController = storyboard.instantiateInitialViewController() as! UINavigationController                
                 viewController.accessibilityValue = menu.storyBoardName
                 return viewController
             }()
@@ -98,5 +99,5 @@ class DashboardViewController: UIViewController, MenuItemDelegate {
     }
     func didLogout() {
         self.performSegue(withIdentifier: StoryBoardSegue.toLogin, sender: self)
-    }
+    }   
 }

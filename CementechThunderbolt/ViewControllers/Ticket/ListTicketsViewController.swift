@@ -83,6 +83,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         noteView.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -271,7 +272,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
                                    "time_requested":"18 DEC 2017"], at: 0);
         ticketListTable.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.top)
         let cell = ticketListTable.cellForRow(at: IndexPath(row: 0, section: 0)) as! TicketListTableViewCell
-        cell.container.backgroundColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
+        cell.container.backgroundColor = #colorLiteral(red: 0.5792680856, green: 0.8280668782, blue: 0.544665292, alpha: 0.09629173801)
         UIView.animate(withDuration: 2.0) {
             cell.container.backgroundColor = UIColor(displayP3Red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }

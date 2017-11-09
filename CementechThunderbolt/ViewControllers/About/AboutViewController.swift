@@ -8,7 +8,7 @@
 
 import UIKit
 import LayerUIExtention
-class AboutViewController: UIViewController {    
+class AboutViewController: UIViewController {
     @IBOutlet var featureRequestPopupView: CustomUIView!
     @IBOutlet weak var btnRequestAFeature: UIBarButtonItem!
     @IBOutlet var feedbackPopup: CustomUIView!
@@ -19,7 +19,7 @@ class AboutViewController: UIViewController {
         effect = UIBlurEffect(style: .light)
         blurrEffectView = UIVisualEffectView(effect: effect)
         blurrEffectView.frame = self.view.bounds
-        self.blurrEffectView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+        makeNotificationBarButton(viewController: self)
     }
     @objc func tapped(){
         animateOut()
