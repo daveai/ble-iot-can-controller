@@ -19,7 +19,7 @@ class AboutViewController: UIViewController {
         effect = UIBlurEffect(style: .light)
         blurrEffectView = UIVisualEffectView(effect: effect)
         blurrEffectView.frame = self.view.bounds
-        makeNotificationBarButton(viewController: self)
+        //makeNotificationBarButton(viewController: self)
     }
     @objc func tapped(){
         animateOut()

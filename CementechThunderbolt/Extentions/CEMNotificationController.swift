@@ -1,5 +1,5 @@
 import UIKit
-extension UIViewController {
+/*extension UIViewController {
     private struct NotificationViewStruct {
         static var notificationView:UIView?
     }
@@ -53,4 +53,4 @@ extension UIViewController {
     @objc func dashboardViewTapped(){
         notificationView.removeFromSuperview()
     }
-}
+}*/

@@ -83,7 +83,7 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         noteView.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        makeNotificationBarButton(viewController: self)
+        //makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -258,8 +258,13 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         self.ticketListTable.reloadData()
         deSelectAllTabs()
         btnUpcoming.setImage(UIImage(imageLiteralResourceName: "upcoming_tab_active"), for: UIControlState.normal)
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self,   selector: (#selector(addARow)), userInfo: nil, repeats: false)
+        if #available(iOS 10.0, *) {
+            timer = Timer.scheduledTimer(timeInterval: 5, target: self,   selector: (#selector(addARow)), userInfo: nil, repeats: false)
+        } else {
+            // Fallback on earlier versions
+        }
     }
+    @available(iOS 10.0, *)
     @objc func addARow(){
         self.shouldAnimateRowBackgroundColorOnAdition = true
         self.currentTicket.insert(["name":"Carlos Kamini",
@@ -309,7 +314,11 @@ class ListTicketsViewController: UIViewController, UITableViewDelegate, UITableV
         
         overlay.frame = self.view.frame
         overlay.bounds = self.view.bounds
-        overlay.backgroundColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        if #available(iOS 10.0, *) {
+            overlay.backgroundColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        } else {
+            // Fallback on earlier versions
+        }
         self.view.addSubview(overlay)
         noteView.center = CGPoint(x: self.view.frame.size.width  / 2, y: self.view.frame.size.height / 2)
         overlay.addSubview(noteView)

@@ -33,7 +33,7 @@ class SetupViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         self.scanActivityIndecator.isHidden = true
         self.connectionIndicator.isHidden = true
         testConnectionView.isHidden = true
-        makeNotificationBarButton(viewController: self)
+        //makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

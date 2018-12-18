@@ -21,7 +21,7 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
         HUD.show(HUDContentType.labeledProgress(title: "", subtitle: "Fetching your current location"))
         locationManager.delegate = self
         self.mapView.delegate = self
-        makeNotificationBarButton(viewController: self)
+        //makeNotificationBarButton(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,9 +49,13 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate, MKM
                 alert.addAction(UIAlertAction(title: NSLocalizedString("Yes", comment: "Default action yes"), style: .`default`, handler: { _ in
                     if let url = URL(string: "App-Prefs:root=Privacy&path=LOCATION") {
                         // If general location settings are disabled then open general location settings
-                        UIApplication.shared.open(url, options: [:], completionHandler: { (isOpened) in
-                            print("Settings opened")
-                        })
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url, options: [:], completionHandler: { (isOpened) in
+                                print("Settings opened")
+                            })
+                        } else {
+                            // Fallback on earlier versions
+                        }
                     }
                 }))
                 self.present(alert, animated: true, completion: nil)
